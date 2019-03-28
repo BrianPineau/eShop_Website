@@ -93,8 +93,10 @@ main {
 
 .banner-title-box h1 {
     display: inline-block;
+    font-family: "Unica One";
     font-weight: 400;
     font-size: 60px;
+    letter-spacing: 0.1em;
     color: white;
     background-color: #006EFF;
 
@@ -126,7 +128,9 @@ main {
 }
 
 .banner-box h3 {
+    font-family: "Unica One";
     font-size: 2rem;
+    font-weight: 400;
 }
 
 .banner-item2 {
@@ -137,11 +141,50 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+}
+
+.sales-title-section a {
+    margin-top: 8px;
 }
 
 /*  Sales Items  */
 
+.sales-items-outer-box {
+    max-width: 1180px;
+    margin: 0 auto;
+}
 
+.sales-items-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px; 
+}
+
+.sales-individual-box {
+    height: 400px;
+    background: red;
+}
+
+.sales-box1 {
+    grid-column: 1/2;
+}
+
+.sales-box2 {
+    grid-column: 2/3;
+}
+
+.sales-box3 {
+    grid-column: 3/4;
+}
+
+.sales-box4 {
+    grid-column: 4/5;
+}
+
+.sales-box5 {
+    grid-column: 5/6;
+}
 
 
 /*  Footer Section  */
