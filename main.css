@@ -20,6 +20,7 @@ body {
     margin: 0 auto;
     font-family: Karla;
     text-transform: uppercase;
+    background-color: #F7F7F7;
 }
 
 .container {
@@ -122,19 +123,16 @@ main {
 .banner-box {
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 500px;
     width: 391px;
     background: white;
+    border: 1px solid #F7F7F7;
 }
 
 .banner-box h3 {
     font-family: "Unica One";
     font-size: 2rem;
-    font-weight: 400;
-}
-
-.banner-item2 {
-    margin: auto 2px;
+    font-weight: 470;
 }
 
 .sales-title-section {
@@ -152,38 +150,95 @@ main {
 
 .sales-items-outer-box {
     max-width: 1180px;
-    margin: 0 auto;
+    margin: 320px auto;
 }
 
 .sales-items-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 400px);
     grid-gap: 1px; 
 }
 
 .sales-individual-box {
-    height: 400px;
-    background: red;
+    background: lightskyblue;
+}
+
+.sales-items-img {
+    display: flex;
+    justify-content: center;
+}
+
+.sales-items-img img {
+    width: 80%;
+    margin-top: 25px;
+}
+
+.hover-image {
+    display: none;
+}
+
+.sales-items-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sales-items-text p {
+    font-weight: bold;
 }
 
 .sales-box1 {
-    grid-column: 1/2;
+    grid-area: 1/1/2/2;
+}
+
+.sales-box1 h2 {
+    font-family: "Unica One";
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    background: #006EFF;
+    padding: 4px 12px;
+}
+
+.sales-box1 span {
+    padding-left: 12px;
 }
 
 .sales-box2 {
-    grid-column: 2/3;
+    grid-area: 1/2/2/3;
 }
 
 .sales-box3 {
-    grid-column: 3/4;
+    grid-area: 1/3/2/4;
 }
 
 .sales-box4 {
-    grid-column: 4/5;
+    grid-area: 1/4/2/5;
 }
 
 .sales-box5 {
-    grid-column: 5/6;
+    grid-area: 1/5/2/6;
+}
+
+.sales-box6 {
+    grid-area: 2/1/3/2;
+}
+
+.sales-box7 {
+    grid-area: 2/2/3/3;
+}
+
+.sales-box8 {
+    grid-area: 2/3/3/4;
+}
+
+.sales-box9 {
+    grid-area: 2/4/3/5;
+}
+
+.sales-box10 {
+    grid-area: 2/5/3/6;
 }
 
 
