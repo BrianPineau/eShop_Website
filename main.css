@@ -171,6 +171,7 @@ main {
 
 .sales-items-img img {
     width: 80%;
+    height: 80%;
     margin-top: 25px;
 }
 
@@ -178,18 +179,40 @@ main {
     display: none;
 }
 
+.sales-individual-box {
+    position: relative;
+    width: 100%;
+}
+
 .sales-items-text {
     display: flex;
     flex-direction: column;
+    height: 100%;
     align-items: center;
+    position: absolute;
+    bottom: -330px;
+    left: 25%;
 }
 
-.sales-items-text p {
+.sales-item-name {
     font-weight: bold;
+}
+
+.sales-item-price {
+    font-weight: 400;
+    color: #646464;
 }
 
 .sales-box1 {
     grid-area: 1/1/2/2;
+}
+
+.sales-first-box-text {
+    height: 100%;
+    padding-top: 275px;
+    background-image: url("./resources/pictures/sales-items-header1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .sales-box1 h2 {
@@ -199,9 +222,11 @@ main {
     color: white;
     background: #006EFF;
     padding: 4px 12px;
+    margin-bottom: 12px;
 }
 
 .sales-box1 span {
+    color: white;
     padding-left: 12px;
 }
 
