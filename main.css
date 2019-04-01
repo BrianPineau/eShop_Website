@@ -161,7 +161,8 @@ main {
 }
 
 .sales-individual-box {
-    background: lightskyblue;
+    background: white;
+    position: relative;
 }
 
 .sales-items-img {
@@ -171,17 +172,11 @@ main {
 
 .sales-items-img img {
     width: 80%;
-    height: 80%;
     margin-top: 25px;
 }
 
 .hover-image {
     display: none;
-}
-
-.sales-individual-box {
-    position: relative;
-    width: 100%;
 }
 
 .sales-items-text {
