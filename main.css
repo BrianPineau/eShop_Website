@@ -18,7 +18,7 @@ ul {
 body {
     width: 100%;
     margin: 0 auto;
-    font-family: Karla;
+    font-family: "Karla";
     text-transform: uppercase;
     background-color: #F7F7F7;
 }
@@ -297,33 +297,72 @@ footer {
 .footer-container {
     margin: 330px auto 0;
     width: 1170px;
-    height: 370px;
+    height: 322px;
     background: goldenrod;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
     grid-column: 1/2;
-    height: 300px;
-    background-color: greenyellow;
+    background-color: black;
+}
+
+.footer-box {
+    color: #848484;
+}
+
+.footer-title {
+    margin: 50px 0 24px;
+    font-family: "Unica One";
+    letter-spacing: 1.6px;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+}
+
+.footer-phone {
+    margin: 16px 0;
 }
 
 .support {
     grid-column: 2/3;
-    height: 300px;
-    background: teal;
+    height: 240px;
+    background: black;
+}
+
+.footer-privacy {
+    margin: 16px 0;
 }
 
 .about {
     grid-column: 3/4;
-    height: 300px;
-    background: plum;
+    height: 240px;
+    background: black;
+}
+
+.footer-contact {
+    margin: 16px 0;
 }
 
 .in-the-know {
     grid-column: 4/5;
-    height: 300px;
-    background: olive;
+    height: 240px;
+    background: black;
+}
+
+.footer-promotions {
+    margin: 16px 0;
+}
+
+.email-form {
+    padding: 18px 0 18px 12px;
+    width: 80%;
+    font-size: 16px;
+    color: #959595;
+    background: #1A1A1A;
+    
 }
