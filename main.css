@@ -284,12 +284,46 @@ main {
     grid-area: 2/5/3/6;
 }
 
-/*  Second Sales Items Section  */
+/*  Sales Items Section ii  */
 
 
 /*  Footer Section  */
 
+footer {
+    width: 100vw;
+    background: black;
+}
 
+.footer-container {
+    margin: 330px auto 0;
+    width: 1170px;
+    height: 370px;
+    background: goldenrod;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
 
+.contact {
+    grid-column: 1/2;
+    height: 300px;
+    background-color: greenyellow;
+}
 
+.support {
+    grid-column: 2/3;
+    height: 300px;
+    background: teal;
+}
 
+.about {
+    grid-column: 3/4;
+    height: 300px;
+    background: plum;
+}
+
+.in-the-know {
+    grid-column: 4/5;
+    height: 300px;
+    background: olive;
+}
