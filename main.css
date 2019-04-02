@@ -148,38 +148,46 @@ main {
 
 /*  Sales Items  */
 
-.sales-items-outer-box {
-    max-width: 1180px;
-    margin: 320px auto;
+.sales-items-outer-box,
+.sales-items-outer-box-ii {
+    max-width: 1170px;
+    max-height: 535px;
+    margin: 320px auto 0 auto;
 }
 
-.sales-items-container {
+.sales-items-container,
+.sales-items-container-ii {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(2, 400px);
     grid-gap: 1px; 
 }
 
-.sales-individual-box {
+.sales-individual-box,
+.sales-individual-box-ii {
     background: white;
     position: relative;
 }
 
-.sales-items-img {
+.sales-items-img,
+.sales-items-img-ii {
     display: flex;
     justify-content: center;
 }
 
-.sales-items-img img {
+.sales-items-img img,
+.sales-items-img-ii img {
     width: 80%;
     margin-top: 25px;
 }
 
-.hover-image {
+.hover-image,
+.hover-image-ii {
     display: none;
 }
 
-.sales-items-text {
+.sales-items-text,
+.sales-items-text-ii {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -189,20 +197,24 @@ main {
     left: 25%;
 }
 
-.sales-item-name {
+.sales-item-name,
+.sales-item-name-ii {
     font-weight: bold;
 }
 
-.sales-item-price {
+.sales-item-price,
+.sales-item-price-ii {
     font-weight: 400;
     color: #646464;
 }
 
-.sales-box1 {
+.sales-box1,
+.sales-box1-ii {
     grid-area: 1/1/2/2;
 }
 
-.sales-first-box-text {
+.sales-first-box-text,
+.sales-first-box-text-ii {
     height: 100%;
     padding-top: 275px;
     background-image: url("./resources/pictures/sales-items-header1.jpg");
@@ -210,7 +222,8 @@ main {
     background-position: center;
 }
 
-.sales-box1 h2 {
+.sales-box1 h2,
+.sales-box1-ii h2 {
     font-family: "Unica One";
     font-size: 2rem;
     font-weight: 300;
@@ -220,46 +233,58 @@ main {
     margin-bottom: 12px;
 }
 
-.sales-box1 span {
+.sales-box1 span,
+.sales-box1-ii span {
     color: white;
     padding-left: 12px;
 }
 
-.sales-box2 {
+.sales-box2,
+.sales-box2-ii {
     grid-area: 1/2/2/3;
 }
 
-.sales-box3 {
+.sales-box3,
+.sales-box3-ii {
     grid-area: 1/3/2/4;
 }
 
-.sales-box4 {
+.sales-box4,
+.sales-box4-ii {
     grid-area: 1/4/2/5;
 }
 
-.sales-box5 {
+.sales-box5,
+.sales-box5-ii {
     grid-area: 1/5/2/6;
 }
 
-.sales-box6 {
+.sales-box6,
+.sales-box6-ii {
     grid-area: 2/1/3/2;
 }
 
-.sales-box7 {
+.sales-box7,
+.sales-box7-ii {
     grid-area: 2/2/3/3;
 }
 
-.sales-box8 {
+.sales-box8,
+.sales-box8-ii {
     grid-area: 2/3/3/4;
 }
 
-.sales-box9 {
+.sales-box9,
+.sales-box9-ii {
     grid-area: 2/4/3/5;
 }
 
-.sales-box10 {
+.sales-box10,
+.sales-box10-ii {
     grid-area: 2/5/3/6;
 }
+
+/*  Second Sales Items Section  */
 
 
 /*  Footer Section  */
