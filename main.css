@@ -146,6 +146,11 @@ main {
     margin-top: 8px;
 }
 
+.sales-title-section img {
+    height: 70%;
+    margin: auto;
+}
+
 /*  Sales Items  */
 
 .sales-items-outer-box,
@@ -296,11 +301,12 @@ footer {
 
 .footer-container {
     margin: 330px auto 0;
-    width: 1170px;
-    height: 322px;
-    background: goldenrod;
+    max-width: 1170px;
+    height: 275px;
+    background: black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
 }
 
 .contact {
@@ -360,9 +366,16 @@ footer {
 
 .email-form {
     padding: 18px 0 18px 12px;
-    width: 80%;
+    width: 180px;
     font-size: 16px;
     color: #959595;
     background: #1A1A1A;
-    
+}
+
+button {
+    background: #0058CC;
+    color: white;
+    height: 54px;
+    width: 54px;
+    font-size: 20px;
 }
