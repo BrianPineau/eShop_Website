@@ -23,21 +23,19 @@ body {
     background-color: #F7F7F7;
 }
 
-.container {
+/*  Header Section  */
+
+header {
     max-width: 100vw;
     padding: 30px 0 20px;
     background: black;
 }
 
-/*  Header Section  */
-
-header {
+.container {
     max-width: 1180px;
-    margin: 0 auto;
+    margin: 0 2vw;
     background: black;
 }
-
-
 
 .header-top-row {
     margin-bottom:60px;
@@ -57,6 +55,7 @@ header {
 .header-menu {
     display: inline-flex;
     padding-left: 0;
+    font-family: "Unica One";
 }
 
 .header-menu li {
@@ -72,7 +71,18 @@ header {
     margin-left: 0;
 }
 
+@media only screen and (max-width: 1025px) {
+    .header-menu {
+        display: none;
+    }
+}
 
+@media only screen and (max-width: 747px) {
+    .header-title {
+        font-size: 32px;
+        font-weight: 900;
+    }
+}
 
 /*  Banner Section  */
 
@@ -82,11 +92,12 @@ header {
     height: 610px;
     background-image: url('./resources/pictures/banner-mountains.jpg');
     margin-bottom: 490px;
+    
 }
 
 main {
     max-width: 1180px;
-    margin: 0 auto;
+    margin: 0 2vw;
 }
 
 .banner-title-box {
@@ -120,6 +131,7 @@ main {
 .banner-container {
     display: flex;
     justify-content: center;
+    margin: auto 3vw;
 }
 
 .banner-box {
@@ -134,7 +146,7 @@ main {
 .banner-box h3 {
     font-family: "Unica One";
     font-size: 2rem;
-    font-weight: 470;
+    font-weight: 400;
 }
 
 .sales-title-section {
@@ -149,8 +161,8 @@ main {
 }
 
 .sales-title-section img {
-    height: 70%;
-    margin: auto;
+    max-height: 70%;
+    max-width: 70%;
 }
 
 /*  Sales Items  */
@@ -159,7 +171,7 @@ main {
 .sales-items-outer-box-ii {
     max-width: 1170px;
     max-height: 535px;
-    margin: 320px auto 0 auto;
+    margin: 320px 2vw 0 2vw;
 }
 
 .sales-items-container,
@@ -303,7 +315,7 @@ footer {
 }
 
 .footer-container {
-    margin: 330px auto 0;
+    margin: 330px 2vw 0;
     max-width: 1170px;
     height: 275px;
     background: black;
