@@ -149,9 +149,7 @@ header {
 .main-container {
     background-size: cover;
     background-position: center;
-    height: 610px;
     background-image: url('./resources/pictures/banner-mountains.jpg');
-    margin-bottom: 480px;
 }
 
 main {
@@ -199,22 +197,12 @@ main {
     .banner-title-box {
         padding-top: 230px;
     }
-
-    .main-container {
-        margin-bottom: 450px;
-    }
 }
 
 @media only screen and (max-width: 970px) {
     .banner-title-wrapper {
         width: 500px;
         height: auto;
-    }
-}
-
-@media only screen and (max-width: 890px) {
-    .main-container {
-        margin-bottom: 400px;
     }
 }
 
@@ -295,11 +283,15 @@ main {
 }
 
 /*  Sales Items  */
+.mobile-sales-items-container {
+    display: none;
+}
 
 .sales-items-outer-box,
 .sales-items-outer-box-ii {
     max-width: 1170px;
     margin: 40px auto;
+    height: 100%;
 }
 
 .sales-items-container,
@@ -437,6 +429,39 @@ main {
 .sales-box10,
 .sales-box10-ii {
     grid-area: 2/5/3/6;
+}
+
+@media only screen and (max-width: 750px) {
+    .sales-items-outer-box,
+    .sales-items-outer-box-ii {
+        display: none;
+    }
+
+    .mobile-sales-items-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1px;
+    }
+
+    .mobile-individual-box1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .mobile-individual-box2 {
+        grid-area: 1/2/2/3;
+        background-color: red;
+    }
+
+    .mobile-individual-box3 {
+        grid-area: 2/1/3/2;
+        background-color: green;
+    }
+
+    .mobile-individual-box4 {
+        grid-area: 2/2/3/3;
+        background-color: turquoise;
+    }
 }
 
 /*  Sales Items Section ii  */
