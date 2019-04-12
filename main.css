@@ -302,19 +302,25 @@ main {
 .sales-individual-box,
 .sales-individual-box-ii {
     background: white;
+    justify-content: space-between;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .sales-items-img,
 .sales-items-img-ii {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 90%;
+    max-height: 235px;
+    margin: 0 auto;
 }
 
 .sales-items-img img,
 .sales-items-img-ii img {
-    width: 80%;
+    width: 90%;
     margin-top: 25px;
 }
 
@@ -327,10 +333,10 @@ main {
 .sales-items-text-ii {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 120px;
+    text-align: center;
     align-items: center;
-    bottom: -330px;
-    left: 25%;
+    justify-content: flex-end;
 }
 
 .sales-item-name,
