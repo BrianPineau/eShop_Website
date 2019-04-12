@@ -479,6 +479,7 @@ main {
 footer {
     width: 100vw;
     background: black;
+    padding: 0 2vw 0 2vw;
 }
 
 .footer-container {
@@ -547,7 +548,7 @@ footer {
 }
 
 .email-form {
-    padding: 18px 0 18px 12px;
+    padding: 19px 0 16px 12px;
     width: 180px;
     font-size: 16px;
     color: #959595;
@@ -560,4 +561,23 @@ button {
     height: 54px;
     width: 54px;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0;
+        line-height: 1rem;
+    }
+
+    .footer-individual-box {
+        padding-left: 2vw;
+        padding-bottom: 20px;
+    }
+
+    .email-form {
+        width: 85%;
+    }
 }
