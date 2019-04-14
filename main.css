@@ -330,7 +330,6 @@ main {
 
 .sales-individual-box:hover {
     background-color: #d6d4d4;
-    transform: scale(1.03);
 }
 
 .sales-items-img {
@@ -346,8 +345,28 @@ main {
     margin-top: 25px;
 }
 
+.sales-inner-container {
+    position: relative;
+}
+
 .hover-image {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 3;
+    color: white;
+    height: 50px;
+    width: 120px;
+    background: #006EFF;
+    left: 25%;
+    left: 25%;
+    top: 43%;
+    transition: all 0.2s ease-in;
+}
+
+.sales-inner-container:hover > .hover-image  {
+    opacity: 100;
+    top: 38%;
 }
 
 .sales-items-text {
@@ -536,7 +555,13 @@ footer {
     background: black;
 }
 
-.footer-privacy {
+.support-terms:hover,
+.support-privacy:hover,
+.support-return:hover {
+    color: white;
+}
+
+.support-privacy {
     margin: 16px 0;
 }
 
@@ -546,7 +571,13 @@ footer {
     background: black;
 }
 
-.footer-contact {
+.about-news:hover,
+.about-contact:hover,
+.about-theme:hover {
+    color: white;
+}
+
+.about-contact {
     margin: 16px 0;
 }
 
