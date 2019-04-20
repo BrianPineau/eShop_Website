@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Unica+One" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/javascript" href="./main.js">
 
 </head>
 <body>
@@ -33,7 +34,7 @@
 
             <div class="icon-set">
                 <div class="search-bar"><img src="./resources/pictures/mag.png" alt=""></div>
-                <div class="checkout">Bye!</div>
+                <div class="checkout"><img src="./resources/pictures/cart.png" alt=""></div>
             </div>
         </div>
 
@@ -61,9 +62,8 @@
         <main>
             <div class="banner-title-box">
                 <div class="banner-title-wrapper">
-                    <h1>Life without boundaries</h1>
+                    <h1 class="banner-title">Life without boundaries</h1>
                 </div>
-                <br />
                 <ul>
                     <li class="banner-list-item">1/2</li>
                     <li class="banner-list-item"><</li>
@@ -76,7 +76,7 @@
         <!--  Banner Second Half  -->
         
         <div class="banner-container">
-            <div class="banner-box banner-item1">
+            <div id="banner-box" class="banner-box banner-item1">
                 <div class="sales-title-section">
                     <h3>Snowboard</h3>
                     <a href="#">View All</a>
@@ -243,7 +243,7 @@
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
                     <div class="sales-items-img">
-                        <img src="./resources/pictures/jacket1.jpeg" alt=""/>
+                        <img src="./resources/pictures/bind1.jpeg" alt=""/>
                     </div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Haze Varsity</div>
@@ -256,7 +256,7 @@
             <div  class="sales-individual-box sales-box3">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket2.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind2.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Greed Jacket</div>
                         <span class="sales-item-price">From $161</span>
@@ -267,7 +267,7 @@
             <div class="sales-individual-box sales-box4">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket3.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind3.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Restricted Pole Cat</div>
                         <span class="sales-item-price">$132.96</span>
@@ -278,7 +278,7 @@
             <div  class="sales-individual-box sales-box5 desktop">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket5.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind4.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">LA</div>
                         <span class="sales-item-price">From $139.96</span>
@@ -289,7 +289,7 @@
             <div  class="sales-individual-box sales-box6 desktop">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket6.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind5.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Campus</div>
                         <span class="sales-item-price">From $132.96</span>
@@ -300,7 +300,7 @@
             <div  class="sales-individual-box sales-box7 desktop">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket7.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind6.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Flint</div>
                         <span class="sales-item-price">From $139.96</span>
@@ -311,7 +311,7 @@
             <div  class="sales-individual-box sales-box8 desktop">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket8.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind7.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Frontier</div>
                         <span class="sales-item-price">From $167.96</span>
@@ -322,7 +322,7 @@
             <div  class="sales-individual-box sales-box9 desktop">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket9.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind8.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Juana</div>
                         <span class="sales-item-price">From $959.40</span>
@@ -333,7 +333,7 @@
             <div  class="sales-individual-box sales-box10 desktop">
                 <div class="sales-inner-container">
                     <div class="hover-image">View</div>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket10.jpeg" alt=""></div> 
+                    <div class="sales-items-img"><img src="./resources/pictures/bind9.jpeg" alt=""></div> 
                     <div class="sales-items-text">
                         <div class="sales-item-name">Gala</div>
                         <span class="sales-item-price">From $1399.30</span>
@@ -385,3 +385,16 @@
   
 </body>
 </html>
+
+
+
+<script>
+    let sliderImages = document.querySelectorAll('.slide'),
+        arrowLeft = document.querySelector('#arrow-left'),
+        arrowRight = document.querySelector('#arrow-right'),
+        current = 0;
+
+    function reset()
+
+
+</script>

@@ -18,7 +18,7 @@ ul {
 body {
     width: 100%;
     margin: 0 auto;
-    font-family: "Karla";
+    font-family: Karla,sans-serif;
     text-transform: uppercase;
     background-color: #F7F7F7;
 }
@@ -53,15 +53,22 @@ header {
 }
 
 .search-bar img {
-    color: white;
-    background: lightgreen;
-    height: 30px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.checkout img {
+    height: 20px;
 }
 
 .header-menu {
     display: inline-flex;
     padding-left: 0;
     font-family: "Unica One";
+}
+
+.header-menu a:hover {
+    color: white;
 }
 
 .header-menu li {
@@ -151,10 +158,10 @@ header {
 /*  Banner Section  */
 
 .main-container {
-    background-size: 100% 480px;
+    background-size: 100% 550px;
     background-position: top;
     background-repeat: no-repeat;
-    background-image: url('./resources/pictures/banner-mountains.jpg');
+    background-image: url('./resources/pictures/mountains-banner.jpg');
 }
 
 main {
@@ -166,7 +173,7 @@ main {
     padding: 350px 0 40px;
 }
 
-.banner-title-box h1 {
+.banner-title {
     display: inline-block;
     padding: 0 10px;
     font-family: "Unica One";
@@ -174,17 +181,25 @@ main {
     font-size: 60px;
     letter-spacing: 0.1em;
     color: white;
-    background-color: #006EFF;
+}
 
+.banner-title {
+    background-color: #006EFF;
 }
 
 .banner-title-box ul {
     display: inline-flex;
-    padding: 0;
+    padding: 0; 
+}
+
+.banner-title-box li:hover {
+    color: black;
+    background: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .banner-title-box li {
-    margin:  0 1px 20px;
+    margin:  10px 1px 20px;
     padding: 12px;
     color: white;
     background-color: #171717;
@@ -200,7 +215,7 @@ main {
 
 @media only screen and (max-width: 1160px) {
     .banner-title-box {
-        padding-top: 230px;
+        padding-top: 255px;
     }
 }
 
@@ -255,11 +270,11 @@ main {
     background: white;
     border: 1px solid #F7F7F7;
     transition: all 0.2s ease-in-out;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.009);
 }
 
 .banner-box:hover {
     background: #d6d4d4;
-    transform: scale(1.05);
 }
 
 .banner-box h3 {
@@ -335,8 +350,8 @@ main {
 .sales-items-img {
     display: flex;
     justify-content: center;
-    max-width: 166px;
-    height: 235px;
+    max-width: 90%;
+    max-height: 235px;
     margin: 0 auto;
 }
 
@@ -358,9 +373,9 @@ main {
     height: 50px;
     width: 120px;
     background: #006EFF;
-    left: 25%;
-    left: 25%;
+    left: 50%;
     top: 43%;
+    margin-left: -60px;
     transition: all 0.2s ease-in;
 }
 
@@ -470,6 +485,14 @@ main {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 350px);
         grid-gap: 1px;
+    }
+
+    .hover-image {
+        left: 37.5%;
+    }
+
+    .sales-inner-container:hover > .hover-image {
+        left: 37.5%;
     }
 
     .sales-items-img img,
@@ -592,19 +615,29 @@ footer {
 }
 
 .email-form {
+    display: inline-flex;
     padding: 19px 0 16px 12px;
-    width: 180px;
+    width: 70%;
     font-size: 16px;
     color: #959595;
     background: #1A1A1A;
 }
 
 button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background: #0058CC;
     color: white;
     height: 54px;
     width: 54px;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 895px) {
+    .email-form {
+        width: 62%;
+    }
 }
 
 @media only screen and (max-width: 750px) {
