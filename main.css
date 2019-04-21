@@ -288,6 +288,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    height: 475px;
 }
 
 .sales-title-section a {
@@ -340,7 +341,6 @@ main {
     display: flex;
     flex-direction: column;
     transition: all 0.2s ease-in-out;
-
 }
 
 .sales-individual-box:hover {
@@ -408,18 +408,15 @@ main {
 
 .sales-first-box-text {
     height: 100%;
-    padding-top: 275px;
+    padding-top: 240px;
     background-image: url("./resources/pictures/sales-items-header1.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .sales-first-box-text-ii {
-    height: 100%;
-    padding-top: 275px;
+    padding-top: 200px;
     background-image: url("./resources/pictures/sales-items-header2.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .sales-box1 h2 {
@@ -479,50 +476,35 @@ main {
         display: none;
     }
 
-    .sales-items-container,
-    .sales-items-container-ii {
+    .sales-items-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 350px);
         grid-gap: 1px;
     }
 
-    .hover-image {
-        left: 37.5%;
-    }
-
-    .sales-inner-container:hover > .hover-image {
-        left: 37.5%;
-    }
-
-    .sales-items-img img,
-    .sales-items-img-ii img {
+    .sales-items-img img {
         height: 250px;
         width: 180px;
-        margin-left: 21%;
     }
 
     .sales-items-text {
         margin-top: 17px;
     }
 
-    .sales-box1,
-    .sales-box1-ii {
+    .sales-box1 {
         grid-area: 1/1/2/2;
     }
 
-    .sales-box2,
-    .sales-box2-ii {
+    .sales-box2 {
         grid-area: 1/2/2/3;
     }
 
-    .sales-box3,
-    .sales-box3-ii {
+    .sales-box3 {
         grid-area: 2/1/3/2;
     }
     
-    .sales-box4,
-    .sales-box4-ii {
+    .sales-box4  {
         grid-area: 2/2/3/3;
     }
 
