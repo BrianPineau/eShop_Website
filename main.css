@@ -1,6 +1,5 @@
 /*  Universal  */
 
-
 * {
     box-sizing: border-box;
     margin: 0; 
@@ -22,6 +21,7 @@ body {
     text-transform: uppercase;
     background-color: #F7F7F7;
 }
+
 
 /*  Header Section  */
 
@@ -145,14 +145,26 @@ header {
     color: #6B6B6B;
 }
 
-.header-drop-span1 {
-    margin-top: 15%;
+.header-drop-span {
+    margin-top: auto;
+    font-weight: bold;
 }
 
-.header-drop2 img {
+.drop-2nd-span {
+    margin-bottom: 20px;
+}
+
+.header-drop2 img,
+.header-drop3 img {
     margin-top: 10%;
     max-height: 70%;
     max-width: 70%;
+}
+
+.header-drop4 img,
+.header-drop5 img {
+    margin-top: 25px;
+    width: 80%;
 }
 
 
@@ -211,6 +223,7 @@ header {
         color: white;
     }
 }
+
 
 /*  Banner Section  */
 
@@ -376,6 +389,7 @@ main {
     }
 }
 
+
 /*  Sales Items  */
 
 .sales-items-outer-box {
@@ -389,7 +403,8 @@ main {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 350px);
     grid-gap: 1px; 
-    margin: 0 2vw;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .sales-individual-box {
@@ -567,6 +582,7 @@ main {
     }
 
 }
+
 
 /*  Footer Section  */
 
