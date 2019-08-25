@@ -102,10 +102,20 @@ header {
     display: none;
 }
 
-.header-drop {
+/*  Header drop down menu  */
+
+.snowboard-drop {
+    display: none;
     position: relative;
+    top: 0;
     background-color: white;
     z-index: 100;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#snowboard-drop.active {
+    display: block;
     height: 345px;
 }
 
@@ -165,6 +175,21 @@ header {
 .header-drop5 img {
     margin-top: 25px;
     width: 80%;
+}
+
+#ski-drop {
+    display: none;
+    position: relative;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#ski-drop.active {
+    display: block;
+    height: 345px;
 }
 
 
@@ -588,7 +613,7 @@ main {
 
 footer {
     width: 100vw;
-    height: 768px;
+    height: 275px;
     background: black;
     padding: 0 2vw 0 2vw;
 }
