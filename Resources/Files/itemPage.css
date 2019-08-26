@@ -1,3 +1,27 @@
+/*  Universal  */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    border: 0;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Karla,sans-serif;
+    text-transform: uppercase;
+    background-color: #F7F7F7;
+}
+
 /*  Header Section  */
 
 header {
@@ -23,6 +47,11 @@ header {
 .header-title {
     display: inline-block;
     color: white;
+}
+
+.header-title-link {
+    height: 100%; 
+    width: 100%;
 }
 
 .icon-set {
@@ -75,4 +104,337 @@ header {
 
 .mobile-header {
     display: none;
+}
+
+/*  Body Section  */
+
+.body-outer-container {
+    background-color: #F7F7F7;
+}
+
+.body-inner-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.body-title-container {
+    display: flex;
+    align-items: center;
+    margin-top: 138px;
+    height: 138px;
+    width: 100%;
+}
+
+.body-title {
+    font-size: 2rem;
+}
+
+.body-items-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 350px);
+    grid-gap: 1px;
+    width: 100%;
+}
+
+.body-individual-item {
+    background: red;
+}
+
+
+
+/*  Sales Items  */
+
+.sales-items-outer-box {
+    max-width: 1170px;
+    margin: 40px auto;
+    height: 100%;
+}
+
+.sales-items-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    grid-gap: 1px; 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sales-individual-box {
+    background: white;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+}
+
+.sales-individual-box:hover {
+    background-color: #d6d4d4;
+}
+
+.sales-items-img {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 235px;
+    margin: 0 auto;
+}
+
+.sales-items-img img {
+    width: 87%;
+    margin-top: 25px;
+}
+
+.sales-inner-container {
+    position: relative;
+}
+
+.hover-image {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 3;
+    color: white;
+    height: 50px;
+    width: 120px;
+    background: #006EFF;
+    left: 50%;
+    top: 43%;
+    margin-left: -60px;
+    transition: all 0.2s ease-in;
+}
+
+.sales-inner-container:hover > .hover-image  {
+    opacity: 100;
+    top: 38%;
+}
+
+.sales-items-text {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales-item-name {
+    font-weight: bold;
+}
+
+.sales-item-price {
+    font-weight: 400;
+    color: #646464;
+}
+
+.sales-box1 {
+    grid-area: 1/1/2/2;
+}
+
+.sales-box2 {
+    grid-area: 1/2/2/3;
+}
+
+.sales-box3 {
+    grid-area: 1/3/2/4;
+}
+
+.sales-box4 {
+    grid-area: 1/4/2/5;
+}
+
+.sales-box5 {
+    grid-area: 1/5/2/6;
+}
+
+.sales-box6 {
+    grid-area: 2/1/3/2;
+}
+
+.sales-box7 {
+    grid-area: 2/2/3/3;
+}
+
+.sales-box8 {
+    grid-area: 2/3/3/4;
+}
+
+.sales-box9 {
+    grid-area: 2/4/3/5;
+}
+
+.sales-box10 {
+    grid-area: 2/5/3/6;
+}
+
+@media only screen and (max-width: 750px) {
+    .desktop {
+        display: none;
+    }
+
+    .sales-items-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 350px);
+        grid-gap: 1px;
+    }
+
+    .sales-items-img img {
+        height: 250px;
+        width: 180px;
+    }
+
+    .sales-items-text {
+        margin-top: 17px;
+    }
+
+    .sales-box1 {
+        grid-area: 1/1/2/2;
+    }
+
+    .sales-box2 {
+        grid-area: 1/2/2/3;
+    }
+
+    .sales-box3 {
+        grid-area: 2/1/3/2;
+    }
+    
+    .sales-box4  {
+        grid-area: 2/2/3/3;
+    }
+
+}
+
+
+/*  Footer Section  */
+
+footer {
+    width: 100vw;
+    height: 275px;
+    background: black;
+    padding: 0 2vw 0 2vw;
+}
+
+.footer-container {
+    margin: 30px auto 0;
+    max-width: 1170px;
+    height: 275px;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    grid-column: 1/2;
+    background-color: black;
+}
+
+.footer-box {
+    color: #848484;
+}
+
+.footer-title {
+    margin: 50px 0 24px;
+    font-family: "Unica One";
+    letter-spacing: 1.6px;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+}
+
+.footer-phone {
+    margin: 16px 0;
+}
+
+.support {
+    grid-column: 2/3;
+    height: 240px;
+    background: black;
+}
+
+.support-terms:hover,
+.support-privacy:hover,
+.support-return:hover {
+    color: white;
+}
+
+.support-privacy {
+    margin: 16px 0;
+}
+
+.about {
+    grid-column: 3/4;
+    height: 240px;
+    background: black;
+}
+
+.about-news:hover,
+.about-contact:hover,
+.about-theme:hover {
+    color: white;
+}
+
+.about-contact {
+    margin: 16px 0;
+}
+
+.in-the-know {
+    grid-column: 4/5;
+    height: 240px;
+    background: black;
+}
+
+.footer-promotions {
+    margin: 16px 0;
+}
+
+.email-form {
+    display: inline-flex;
+    padding: 19px 0 16px 12px;
+    width: 70%;
+    font-size: 16px;
+    color: #959595;
+    background: #1A1A1A;
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #0058CC;
+    color: white;
+    height: 54px;
+    width: 54px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 895px) {
+    .email-form {
+        width: 62%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0;
+        line-height: 1rem;
+    }
+
+    .footer-individual-box {
+        padding-left: 2vw;
+        padding-bottom: 20px;
+    }
+
+    .email-form {
+        width: 85%;
+    }
 }
