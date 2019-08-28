@@ -110,6 +110,7 @@ header {
 
 .body-outer-container {
     background-color: #F7F7F7;
+    margin: 138px 0;
 }
 
 .body-inner-container {
@@ -120,7 +121,6 @@ header {
 .body-title-container {
     display: flex;
     align-items: center;
-    margin-top: 138px;
     height: 138px;
     width: 100%;
 }

@@ -1,0 +1,107 @@
+/*  Universal  */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    border: 0;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Karla,sans-serif;
+    text-transform: uppercase;
+    background-color: #F7F7F7;
+}
+
+/*  Header Section  */
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    padding: 0;
+    background: black;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    background: black;
+}
+
+.header-top-row {
+    margin-bottom:60px;
+}
+
+.header-title {
+    display: inline-block;
+    color: white;
+}
+
+.header-title-link {
+    height: 100%; 
+    width: 100%;
+}
+
+.icon-set {
+    display: inline-flex;
+    float: right;
+    color: white;
+}
+
+.search-bar img {
+    height: 20px;
+    margin-right: 12px;
+}
+
+.checkout img {
+    height: 20px;
+}
+
+.header-menu {
+    display: inline-flex;
+    padding-left: 0;
+    font-family: "Unica One";
+    margin-bottom: 20px;
+}
+
+.header-menu a:hover {
+    color: white;
+}
+
+.header-menu li {
+    margin: 0 20px;
+}
+
+.header-menu a {
+    color: #C1C1C1;
+    font-weight: 700;
+}
+
+#first-menu-item {
+    margin-left: 0;
+}
+
+.header-hamburger-icon {
+    display: none;
+    color: #848484;
+}
+
+.header-hamburger-icon:hover {
+    color: white;
+}
+
+.mobile-header {
+    display: none;
+}
