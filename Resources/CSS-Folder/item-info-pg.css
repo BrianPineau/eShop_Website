@@ -105,3 +105,80 @@ header {
 .mobile-header {
     display: none;
 }
+
+/*  Body Section  */
+
+.body-outer-container {
+    background-color: #FFFFFF;
+    margin-top: 138px;
+}
+
+.body-inner-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.item-image-display {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.item-image-display img {
+    width: 60%;
+    max-height: auto;
+}
+
+.item-information-container {
+    width: 50%;
+}
+
+.info-title {
+    font-family: "Unica One", sans-serif;
+    font-size: 2.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.7px;
+}
+
+.item-price {
+    color: #777777;
+    font-size: 20px;
+}
+
+.item-info-divider {
+    border: 1px solid #F7F7F7;
+}
+
+.divider1 {
+    margin: 18px 0;
+}
+
+.button {
+    border-radius: 3px;
+    height: 45px;
+    width: 80%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button-1 {
+    border: 1px solid #006EFF;
+    color: #006EFF;
+    background-color: white;
+}
+
+.button-2 {
+    margin-top: 14px;
+    color: white;
+    background-color: #006EFF;
+}
+
+.item-information-container ul {
+    background-color: lightcoral;
+}
+
+.item-information-container li {
+    list-style-type: disc;
+}
