@@ -183,16 +183,29 @@ header {
 }
 
 aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 180px;
     width: 100%;
-    background-color: #F7F7F7;
+    
     text-align: center;
     font-size: 1.6em;
     font-family: "Unica One", sans-serif;
     font-weight: 300;
+}
+
+.go-back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+    transition: 0.08s ease-out;
+}
+
+.go-back-button:hover {
+    background-color: rgb(185, 184, 184);
+    color: #F7F7F7;
+
 }
 
 /*  Footer Section  */
