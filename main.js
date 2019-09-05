@@ -1,16 +1,25 @@
+const snowboardBtn = document.getElementById("header-snowboard-button");
+const skiBtn = document.getElementById("header-ski-button")
+const addCart = document.querySelector('.button-1');
+const cartUpdate = document.querySelector('.header-cart-item');
 
 
-document.getElementById("header-snowboard-button").addEventListener("click", openMenu);
-
-
+/*  Header Drop Menus  */
 function openMenu() {
     document.getElementById("snowboard-drop").classList.toggle("active");
 }
 
-
-document.getElementById("header-ski-button").addEventListener("click", openMenu2);
-
-
 function openMenu2() {
     document.getElementById("ski-drop").classList.toggle("active");
 }
+
+/*  Cart Full Indicator  */
+function updateCheckout () {
+    cartUpdate.classList.add("full");
+}
+
+/*  Event Listeners  */
+snowboardBtn.addEventListener("click", openMenu);
+skiBtn.addEventListener("click", openMenu2);
+addCart.addEventListener('click', updateCheckout);
+
