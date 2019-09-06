@@ -1,7 +1,21 @@
+
+const headerCollapse = document.querySelector('header');
 const snowboardBtn = document.getElementById("header-snowboard-button");
 const skiBtn = document.getElementById("header-ski-button")
 const addCart = document.querySelector('.button-1');
 const cartUpdate = document.querySelector('.header-cart-item');
+
+/*  Header Scroll Pop Out  */
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 138) {
+        headerCollapse.classList += ' pop-out';
+    } else {
+        headerCollapse.classList = 'header';
+    }
+});
+
+
 
 
 /*  Header Drop Menus  */
