@@ -8,7 +8,7 @@ const cartUpdate = document.querySelector('.header-cart-item');
 /*  Header Scroll Pop Out  */
 
 window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 138) {
+    if (window.pageYOffset > 40) {
         headerCollapse.classList += ' pop-out';
     } else {
         headerCollapse.classList = 'header';

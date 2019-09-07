@@ -26,17 +26,18 @@ body {
 /*  Header Section  */
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     width: 100vw;
     padding: 0;
     background: black;
-    transition: all 600ms ease-out; 
+    transition: all 100ms ease-out; 
 }
 
 .pop-out {
-    position: fixed;
     top: -80px;
-    left: 0;
-    z-index: 1000;
 }
 
 .container {
@@ -257,11 +258,11 @@ header {
 /*  Banner Section  */
 
 .main-container {
-    background-size: 100% 550px;
+    background-size: 100% 588px;
     background-position: top;
     background-repeat: no-repeat;
     background-image: url('./resources/pictures/mountains-banner.jpg');
-    margin-top: 138px;
+    margin-top: 100px;
 }
 
 main {
@@ -270,7 +271,7 @@ main {
 }
 
 .banner-title-box {
-    padding: 350px 0 40px;
+    padding: 388px 0 40px;
 }
 
 .banner-title {
