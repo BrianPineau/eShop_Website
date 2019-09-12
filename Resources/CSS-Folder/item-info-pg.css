@@ -204,6 +204,7 @@ header {
 }
 
 .item-information-container {
+    position: relative;
     width: 50%;
 }
 
@@ -212,6 +213,13 @@ header {
     font-size: 2.25em;
     letter-spacing: 0.1em;
     margin-bottom: 0.7px;
+}
+
+.demo-page {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    color: red;
 }
 
 .item-price {
@@ -267,7 +275,6 @@ header {
 aside {
     height: 180px;
     width: 100%;
-    
     text-align: center;
     font-size: 1.6em;
     font-family: "Unica One", sans-serif;
@@ -288,6 +295,43 @@ aside {
     background-color: rgb(185, 184, 184);
     color: #F7F7F7;
 
+}
+
+@media only screen and (max-width: 895px) {
+    .body-outer-container {
+        margin-top: 60px;
+    }
+
+    .body-inner-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .item-information-container {
+        position: static;
+        width: 100%;
+    }
+
+    .info-title,
+    .item-price {
+        display: flex;
+        justify-content: center;
+    }
+
+    .demo-page {
+        display: none;
+    }
+
+    .body-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 92%;
+    }
 }
 
 /*  Footer Section  */

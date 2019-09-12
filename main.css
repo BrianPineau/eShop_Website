@@ -443,6 +443,7 @@ main {
     grid-template-rows: repeat(2, 350px);
     grid-gap: 1px; 
     margin: 0 auto;
+    padding: 0 2vw;
     width: 100%;
 }
 
@@ -627,7 +628,7 @@ main {
 
 footer {
     width: 100vw;
-    height: 275px;
+    height: 285px;
     background: black;
     padding: 0 2vw 0 2vw;
 }
@@ -730,6 +731,11 @@ button {
 }
 
 @media only screen and (max-width: 895px) {
+    footer {
+        height: 790px;
+    }
+
+
     .email-form {
         width: 62%;
     }

@@ -96,6 +96,7 @@ header {
 .header-hamburger-icon {
     display: none;
     color: #848484;
+    margin-bottom: 20px;
 }
 
 .header-hamburger-icon:hover {
@@ -176,14 +177,25 @@ header {
 }
 
 .body-title-container {
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 138px;
     width: 100%;
 }
 
 .body-title {
     font-size: 2rem;
+    margin: 0 3vw;
+}
+
+.demo-title {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: red;
+    margin-right: 3vw;
 }
 
 .body-items-container {
