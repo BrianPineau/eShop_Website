@@ -211,7 +211,6 @@ header {
 
 .sales-items-outer-box {
     max-width: 1170px;
-    margin: 40px auto;
     height: 100%;
 }
 
@@ -241,12 +240,13 @@ header {
     display: flex;
     justify-content: center;
     max-width: 90%;
-    max-height: 235px;
-    margin: 0 auto;
+    height: 235px;
+    margin: 10px auto;
 }
 
 .sales-items-img img {
     width: 87%;
+    max-height: 100%;
     margin-top: 25px;
 }
 
@@ -386,8 +386,9 @@ header {
 }
 
 @media only screen and (max-width: 416px) {
+
     .body-outer-container {
-        margin: 60px 0;
+        margin-top: 60px;
     }
 
     .body-title{
@@ -407,7 +408,7 @@ header {
 
     .sales-items-container {
         display: grid;
-        grid-template-columns: 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 350px);
         grid-gap: 1px;
     }
@@ -442,7 +443,6 @@ header {
 
 footer {
     width: 100vw;
-    height: 780px;
     background: black;
     padding: 0 2vw 0 2vw;
 }
@@ -557,6 +557,10 @@ button {
         flex-direction: column;
         grid-gap: 0;
         line-height: 1rem;
+    }
+
+    footer {
+        height: 790px;
     }
 
     .footer-individual-box {

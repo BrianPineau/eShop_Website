@@ -62,7 +62,7 @@ header {
 
 .search-bar img {
     height: 20px;
-    margin-right: 12px;
+    margin-right: 3vw;
 }
 
 .checkout img {
@@ -133,7 +133,7 @@ header {
     }
 
     .header-hamburger-icon {
-        margin-left: 2vw;
+        margin: 0 0 20px 2vw;
     }
 }
 
@@ -219,6 +219,7 @@ header {
     position: absolute;
     top: 14px;
     right: 0;
+    margin-right: 2vw;
     color: red;
 }
 
@@ -295,6 +296,12 @@ aside {
     background-color: rgb(185, 184, 184);
     color: #F7F7F7;
 
+}
+
+@media only screen and (min-width: 1170px) {
+    .demo-page {
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 895px) {
@@ -445,7 +452,16 @@ button {
     }
 }
 
+@media only screen and (max-width: 796px) {
+    footer {
+        height: 285px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
+    footer {
+        height: 780px;
+    }
 
     .footer-container {
         display: flex;
@@ -460,6 +476,6 @@ button {
     }
 
     .email-form {
-        width: 85%;
+        width: 75%;
     }
 }
