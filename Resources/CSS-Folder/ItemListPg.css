@@ -109,6 +109,10 @@ header {
 
 
 @media only screen and (max-width: 1170px) {
+    header {
+        margin-bottom: 20px;
+    }
+
     .header-top-row {
         margin: 0 2vw 60px;  
     }
@@ -186,7 +190,6 @@ header {
 
 .body-title {
     font-size: 2rem;
-    margin: 0 3vw;
 }
 
 .demo-title {
@@ -194,7 +197,6 @@ header {
     top: 60px;
     right: 0;
     color: red;
-    margin-right: 3vw;
 }
 
 .body-items-container {
@@ -205,7 +207,11 @@ header {
     width: 100%;
 }
 
-
+@media only screen and (max-width: 750px) {
+    .body-outer-container {
+        margin: 60px 0 0;
+    }
+}
 
 /*  Sales Items  */
 
