@@ -32,6 +32,7 @@ header {
     width: 100vw;
     padding: 0;
     background: black;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -41,7 +42,7 @@ header {
 }
 
 .header-top-row {
-    margin-bottom:60px;
+    margin: 0 2vw 60px;
 }
 
 .header-title {
@@ -73,7 +74,7 @@ header {
     display: inline-flex;
     padding-left: 0;
     font-family: "Unica One";
-    margin-bottom: 20px;
+    margin: 0 2vw 20px 2vw;
 }
 
 .header-menu a:hover {
@@ -96,7 +97,7 @@ header {
 .header-hamburger-icon {
     display: none;
     color: #848484;
-    margin-bottom: 20px;
+    margin: 0 0 20px 2vw;
 }
 
 .header-hamburger-icon:hover {
@@ -109,18 +110,6 @@ header {
 
 
 @media only screen and (max-width: 1170px) {
-    header {
-        margin-bottom: 20px;
-    }
-
-    .header-top-row {
-        margin: 0 2vw 60px;  
-    }
-
-    .header-menu {
-        margin: 0 2vw;
-    }
-
     .header-hamburger-icon {
         margin-left: 2vw;
     }
@@ -177,6 +166,7 @@ header {
 .body-inner-container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 2vw;
 }
 
 .body-title-container {
