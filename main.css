@@ -47,6 +47,7 @@ header {
 }
 
 .header-top-row {
+    position: relative;
     margin-bottom:60px;
 }
 
@@ -59,6 +60,12 @@ header {
     display: inline-flex;
     float: right;
     color: white;
+}
+
+.icon-move {
+    position: absolute;
+    right: 0;
+    bottom: -84px;
 }
 
 .search-bar img {
