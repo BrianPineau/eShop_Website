@@ -26,6 +26,13 @@ function openMenu() {
     document.getElementById("snowboard-drop").classList.toggle("active");
 }
 
+window.addEventListener('mouseup', function (event) {
+    const snowboardAway = document.getElementById("snowboard-drop");
+    if (event.target != snowboardAway) {
+        snowboardAway.classList = ' snowboard-drop';
+    }
+});
+
 function openMenu2() {
     document.getElementById("ski-drop").classList.toggle("active");
 }

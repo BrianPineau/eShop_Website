@@ -44,6 +44,7 @@ header {
     max-width: 1170px;
     margin: 0 auto;
     background: black;
+    padding: 0 2vw;
 }
 
 .header-top-row {
@@ -118,11 +119,8 @@ header {
 
 .snowboard-drop {
     display: none;
-    position: relative;
-    top: 0;
     background-color: white;
     z-index: 100;
-    height: 0;
     transition: all 0.3s ease-in-out;
 }
 
@@ -207,15 +205,15 @@ header {
 
 @media only screen and (max-width: 1170px) {
     .header-top-row {
-        margin: 0 2vw 60px;
+        margin-bottom: 60px;
     }
 
     .header-menu {
-        margin: 0 2vw 20px 0;
+        margin-bottom: 20px;
     }
 
     .header-hamburger-icon {
-        margin: 0 0 20px 2vw;
+        margin-bottom: 20px;
     }
 }
 
@@ -232,6 +230,10 @@ header {
     .header-title {
         font-size: 30px;
         font-weight: 700;
+    }
+
+    .icon-move {
+        bottom: -64px;
     }
 
     .header-hamburger-icon {
@@ -278,6 +280,7 @@ main {
 
 .banner-title-box {
     padding: 388px 0 40px;
+    margin-left: 2vw;
 }
 
 .banner-title {
@@ -344,6 +347,7 @@ main {
 
     .main-container {
         background-size: 100% 420px;
+        margin-top: 60px;
     }
 }
 
@@ -486,14 +490,14 @@ main {
 .hover-image {
     opacity: 0;
     position: absolute;
+    left: 50%;
+    top: 43%;
     text-align: center;
     line-height: 3;
     color: white;
     height: 50px;
     width: 120px;
     background: #006EFF;
-    left: 50%;
-    top: 43%;
     margin-left: -60px;
     transition: all 0.2s ease-in;
 }
@@ -603,8 +607,8 @@ main {
     }
 
     .sales-items-img img {
-        height: 250px;
-        width: 180px;
+        height: auto;
+        max-width: 210px;
     }
 
     .sales-items-text {
@@ -627,6 +631,13 @@ main {
         grid-area: 2/2/3/3;
     }
 
+}
+
+@media only screen and (max-width: 523px) {
+    .sales-items-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 350px);
+    }
 }
 
 
