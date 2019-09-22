@@ -22,6 +22,30 @@ body {
     background-color: #F7F7F7;
 }
 
+/*  Mobile Drop Down Header  */
+.mobile-header-drop {
+    width: 300px;
+    height: 100vh;
+    background-color: #F7F7F7;
+    z-index: 1001;
+}
+
+.mobile-header-search {
+    height: 70px; 
+}
+
+.mobile-header-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mobile-item {
+    background-color: white;
+    height: 70px;
+    width: 298px;
+    margin: 1px;
+}
 
 /*  Header Section  */
 
@@ -362,7 +386,7 @@ main {
 
     .main-container {
         background-size: 100% 420px;
-        margin-top: 60px;
+        margin-top: 0;
     }
 }
 
