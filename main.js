@@ -37,6 +37,32 @@ function openMenu2() {
     document.getElementById("ski-drop").classList.toggle("active");
 }
 
+/*  Mobile Drop Down Header  */
+let toggleNavStatus = false;
+
+let toggleNav = function (){
+    let mobileDrop = document.querySelector(".mobile-header-drop"); 
+    let moveBody = document.querySelector("body");
+    
+  //drop header extends with button click
+    if (toggleNavStatus === false) {
+        mobileDrop.style.left = "0";
+        moveBody.style.position = "fixed";
+        moveBody.style.top = "0";
+        moveBody.style.left = "300px";
+        toggleNavStatus = true;
+    } else if (toggleNavStatus === true) {
+        mobileDrop.style.left = "-300px";
+        moveBody.style.top = "0";
+        moveBody.style.left = "0";
+        moveBody.style.position = "static";
+        toggleNavStatus = false;
+    }
+    
+
+
+}
+
 /*  Cart Full Indicator  */
 function updateCheckout () {
     cartUpdate.classList.add("full");
