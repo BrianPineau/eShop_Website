@@ -24,10 +24,17 @@ body {
 
 /*  Mobile Drop Down Header  */
 .mobile-header-drop {
+    position: fixed;
+    top: 60px;
+    left: -300px;
     width: 300px;
     height: 100vh;
     background-color: #F7F7F7;
     z-index: 1001;
+}
+
+.mobile-drop-extend {
+    left: 0;
 }
 
 .mobile-header-search {
@@ -38,13 +45,28 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    list-style-type: none;
+    padding: 0;
 }
 
 .mobile-item {
+    display: flex;
+    align-items: center;
+    font-family: "Unica One";
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.22rem;
     background-color: white;
+    color: black;
     height: 70px;
     width: 298px;
     margin: 1px;
+    padding-left: 3vw;
+    text-transform: uppercase;
+}
+
+.mobile-item:hover {
+    background-color: #F7F7F7;
 }
 
 /*  Header Section  */
@@ -111,6 +133,10 @@ header {
 .search-bar img {
     height: 20px;
     margin: 0 20px;
+}
+
+.checkout {
+    height: 20px;
 }
 
 .checkout img {
