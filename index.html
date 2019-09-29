@@ -13,56 +13,30 @@
 </head>
 <body>
 
-<!--  Mobile Drop Down Header  -->
-    <section class="mobile-header-drop">
-        <form class="mobile-header-search" action="">
-
-        </form>
-
-        <ul class="mobile-header-body">
-          <a href="#"><li class="mobile-item mobile-sec-1">home</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-2">snowboard</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-3">ski</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-4">men</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-5">women</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-6">brands</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-7">accessories</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-8">sale</li></a>
-          <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-9">account</li></a>
-        </ul>
-    </section>
-  
-
 <!--  Header Section  -->
-
-    
     <header>
       <div class="container">
 
         <div class="mobile-header">
-            <span class="mobile-hamburger-icon" onclick="toggleNav() ">Menu</span>
             <span class="header-title">Snowdevil</span>
             <img src="./Resources/Pictures/mag.png" class="checkout" alt="Search bar">
         </div>
 
         <div class="header-top-row">
-            <div class="header-drop-menu-icon">Hey-o!</div>
             <div class="header-title">
                 Snowdevil
             </div>
 
             <div class="icon-set">
 
-                <div class="search-bar">
-                    
-                        <input class="search-text" type="text" placeholder="Search">
-                        <a href="#" class="search-button">
-                          <img src="./Resources/Pictures/mag.png" alt="Search bar">
-                        </a>
-                    
-                </div>
+              <div class="search-bar">
+                <input class="search-text" type="text" placeholder="Search">
+                <a class="search-button" onclick="searchAppear()">
+                  <img src="./Resources/Pictures/mag.png" alt="Search bar">
+                </a>
+              </div>
 
-                <div class="checkout"><img src="./resources/pictures/cart.png" alt=""></div>
+              <div class="checkout"><img src="./resources/pictures/cart.png" alt="checkout cart"></div>
             </div>
         </div>
 
@@ -77,11 +51,33 @@
             <li><a href="#">Sale</a></li>
             <li class="header-final-list-item"><a href="">Account</a></li>
         </ul>
-        <span class="header-hamburger-icon">Menu</span>
+
+      <!--  Hamburger Icon  -->
+        <div class="menu-wrap" onclick="toggleNav()">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+        </div>
+        
+
       </div>
 
-      <!--  Header drop down menu  -->
+      <!--  Mobile Drop Down Header  -->
+      <section class="mobile-header-drop">
+            
+        <ul class="mobile-header-body">
+            <a href="#"><li class="mobile-item mobile-sec-1">home</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-2">snowboard</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-3">ski</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-4">men</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-5">women</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-6">brands</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-7">accessories</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-8">sale</li></a>
+            <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-9">account</li></a>
+        </ul>
+      </section>
 
+      <!--  Header drop down menu  -->
       <div id="snowboard-drop" class="header-drop snowboard-drop">
           <div class="inner-drop-container">
 
@@ -159,12 +155,8 @@
       </div>
 
     </header>
-    
-    
-
 
 <!--  Banner Section  -->
-
     <div class="main-container">
         <main>
             <div class="banner-title-box">
@@ -181,7 +173,6 @@
         </main>
 
         <!--  Banner Second Half  -->
-        
         <div class="banner-container">
             <div id="banner-box" class="banner-box banner-item1">
                 <div class="sales-title-section">
@@ -215,10 +206,7 @@
         </div>
     </div>
 
-
 <!--  Sales Items  -->
-
-
     <div class="sales-items-outer-box">
         <div class="sales-items-container">
 
@@ -334,10 +322,7 @@
         </div>
     </div>
 
-
             <!--  Second Sales Items Section  -->
-            
-
     <div class="sales-items-outer-box">
         <div class="sales-items-container">
 
@@ -456,7 +441,6 @@
     </div>
     
 <!--  Footer Section  -->
-
     <footer>
         <div class="footer-container">
             <div class="contact footer-individual-box">
