@@ -348,7 +348,7 @@ header {
     height: 70px;
     width: 300px;
     border: 1px solid #F7F7F7;
-    padding-left: 3vw;
+    padding-left: 4vw;
     text-transform: uppercase;
 }
 
@@ -412,6 +412,11 @@ header {
         color: white;
     }
 
+    .toggler {
+        top: -54px;
+        left: -30px;
+    }
+
     .hamburger {
         top: -60px;
         left: -34px;
@@ -419,6 +424,7 @@ header {
 
     .mobile-header-drop {
         top: 0;
+        left: -34px;
     }
 }
 

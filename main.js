@@ -47,16 +47,15 @@ let toggleNavStatus = false;
 
 let toggleNav = function (event){
     let mobileDrop = document.querySelector(".mobile-header-drop");
-    let moveBody = document.querySelector("body");
     
 //menu extends with button click
     if (toggleNavStatus === false) {
-        mobileDrop.style.left = "-36px";
+        mobileDrop.style.left = "-38px";
         toggleNavStatus = true;
 
 //menu retracts
     } else if (toggleNavStatus === true) {
-        mobileDrop.style.left = "-330px";
+        mobileDrop.style.left = "-338px";
         toggleNavStatus = false;
     }
 
