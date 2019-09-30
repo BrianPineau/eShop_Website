@@ -46,21 +46,17 @@ function searchAppear() {
 let toggleNavStatus = false;
 
 let toggleNav = function (event){
-    let mobileDrop = document.querySelector(".mobile-header-drop"); 
-    let mobileDropOffset = headerCollapse.offsetHeight;
+    let mobileDrop = document.querySelector(".mobile-header-drop");
     let moveBody = document.querySelector("body");
-
-//Set height of side menu
-    mobileDrop.style.top = mobileDropOffset + 'px';
     
 //menu extends with button click
     if (toggleNavStatus === false) {
-        mobileDrop.style.left = "0";
+        mobileDrop.style.left = "-36px";
         toggleNavStatus = true;
 
 //menu retracts
     } else if (toggleNavStatus === true) {
-        mobileDrop.style.left = "-300px";
+        mobileDrop.style.left = "-330px";
         toggleNavStatus = false;
     }
 
