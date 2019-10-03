@@ -21,13 +21,15 @@ window.addEventListener('scroll', function() {
 
 
 /*  Header Drop Menus  */
+/*
 function openMenu() {
     document.getElementById("snowboard-drop").classList.toggle("active");
 }
+
 //Click outside of drop menu to close menu
-window.addEventListener('mouseup', function (event) {
+window.addEventListener('mouseup', function (e) {
     const snowboardAway = document.getElementById("snowboard-drop");
-    if (event.target != snowboardAway) {
+    if (e.target != snowboardAway) {
         snowboardAway.classList = ' snowboard-drop';
     }
 });
@@ -35,10 +37,29 @@ window.addEventListener('mouseup', function (event) {
 function openMenu2() {
     document.getElementById("ski-drop").classList.toggle("active");
 }
+*/
+/* Header Drop Menus */
+let toggleMenu = false;
+
+let openMenu = function () {
+let dropMenu = document.getElementById("snowboard-drop");
+    //Menu appears
+    if (toggleMenu === false) {
+        dropMenu.style.display = "block";
+        toggleMenu = true;
+    
+    //Menu disappears on button click or click outside
+    } else if (toggleMenu === true) {
+        dropMenu.style.display = "none";
+        toggleMenu = false;
+}
+
+}
+
 
 /*  Search Bar Appear  */
 function searchAppear() {
-    document.querySelector("search-text img").classList.toggle("search-text-appear");
+    document.querySelector("search-text").classList.toggle("search-text-appear");
 }
 
 
