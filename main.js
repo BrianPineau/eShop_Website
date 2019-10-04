@@ -52,7 +52,7 @@ let dropMenu = document.getElementById("snowboard-drop");
     } else if (toggleMenu === true) {
         dropMenu.style.display = "none";
         toggleMenu = false;
-}
+  }
 
 }
 
@@ -64,9 +64,10 @@ function searchAppear() {
 
 
 /*  Mobile Side Menu  */
+
 let toggleNavStatus = false;
 
-let toggleNav = function (event){
+let toggleNav = function (){
     let mobileDrop = document.querySelector(".mobile-header-drop");
     
 //menu extends with button click
@@ -79,8 +80,36 @@ let toggleNav = function (event){
         mobileDrop.style.left = "-338px";
         toggleNavStatus = false;
     }
-
 }
+
+
+/*
+let mobileDrop = document.querySelector(".mobile-header-drop");
+let OPEN_CLASS = '.mobile-header-drop.mobile-drop-extend'
+let menuBtn = document.querySelector('toggler');
+
+const addOffClick = (e, cb) => {
+    const offClick = (evt) => {
+      if (e !== evt) {
+        cb()
+        document.removeEventListener('click', offClick)
+      }
+    }
+    document.addEventListener('click', offClick)
+  }
+  
+  const handleClick = (e) => {
+    const toggleMenu = () => mobileDrop.classList.toggle(OPEN_CLASS)
+    if (propCheck.checked) e.stopPropagation()
+    if (!menu.classList.contains(OPEN_CLASS)) {
+      toggleMenu()
+      addOffClick(e, toggleMenu)
+    }
+  }
+  
+  menuBtn.addEventListener('click', handleClick)
+*/
+
 
 /*  Cart Full Indicator  */
 function updateCheckout () {
