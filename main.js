@@ -3,8 +3,6 @@ const headerCollapse = document.querySelector('header');
 const moveIcons = document.querySelector('.icon-set');
 const snowboardBtn = document.getElementById("header-snowboard-button");
 const skiBtn = document.getElementById("header-ski-button")
-const addCart = document.querySelector('.button-1');
-const cartUpdate = document.querySelector('.header-cart-item');
 
 /*  Header Scroll Pop Out  */
 window.addEventListener('scroll', function() {
@@ -112,12 +110,19 @@ const addOffClick = (e, cb) => {
 
 
 /*  Cart Full Indicator  */
+const addCart = document.getElementById('button-1');
+const cartUpdate = document.querySelector('.header-cart-item');
+
+/*
 function updateCheckout () {
     cartUpdate.classList.add("full");
 }
-
+*/
+addCart.addEventListener("click", function () {
+    cartUpdate.classList.add("full");
+});
 /*  Event Listeners  */
 snowboardBtn.addEventListener("click", openMenu);
 skiBtn.addEventListener("click", openMenu2);
-addCart.addEventListener('click', updateCheckout);
+//addCart.addEventListener('click', updateCheckout);
 
