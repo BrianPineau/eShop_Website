@@ -2,7 +2,9 @@
 const headerCollapse = document.querySelector('header');
 const moveIcons = document.querySelector('.icon-set');
 const snowboardBtn = document.getElementById("header-snowboard-button");
-const skiBtn = document.getElementById("header-ski-button")
+const skiBtn = document.getElementById("header-ski-button");
+const addCart = document.getElementById('button-1');
+const cartUpdate = document.querySelector('.header-cart-item');
 
 /*  Header Scroll Pop Out  */
 window.addEventListener('scroll', function() {
@@ -36,6 +38,8 @@ function openMenu2() {
     document.getElementById("ski-drop").classList.toggle("active");
 }
 */
+
+
 /* Header Drop Menus */
 let toggleMenu = false;
 
@@ -43,7 +47,7 @@ let openMenu = function () {
 let dropMenu = document.getElementById("snowboard-drop");
     //Menu appears
     if (toggleMenu === false) {
-        dropMenu.style.display = "block";
+        dropMenu.classList = "block";
         toggleMenu = true;
     
     //Menu disappears on button click or click outside
@@ -56,9 +60,30 @@ let dropMenu = document.getElementById("snowboard-drop");
 
 
 /*  Search Bar Appear  */
+/*
 function searchAppear() {
-    document.querySelector("search-text").classList.toggle("search-text-appear");
+    document.querySelector(".search-text").classList.toggle(".search-text-appear");
 }
+*/
+
+
+/*  Search Bar Appear  */
+let toggleSearch = false;
+let searchToggle = document.querySelector('.search-bar');
+let searchAppear = document.querySelector('.search-text');
+
+let navAppear = () => {
+    if (toggleSearch === false) {
+        searchAppear.style.display = 'block';
+        searchAppear.style.width = '150px';
+        toggleSearch = true;
+    } else if (toggleSearch === true) {
+        searchAppear.style.display = 'none';
+        searchAppear.style.width = 0;
+        toggleSearch = false;
+    }
+}
+
 
 
 /*  Mobile Side Menu  */
@@ -110,18 +135,14 @@ const addOffClick = (e, cb) => {
 
 
 /*  Cart Full Indicator  */
-const addCart = document.getElementById('button-1');
-const cartUpdate = document.querySelector('.header-cart-item');
+const checkoutIndic = function () {
+    cartUpdate.classList.add("full");
+};
 
-/*
-function updateCheckout () {
-    cartUpdate.classList.add("full");
-}
-*/
-addCart.addEventListener("click", function () {
-    cartUpdate.classList.add("full");
-});
+
 /*  Event Listeners  */
+searchToggle.addEventListener("click", navAppear)
+addCart.addEventListener("click", checkoutIndic);
 snowboardBtn.addEventListener("click", openMenu);
 skiBtn.addEventListener("click", openMenu2);
 //addCart.addEventListener('click', updateCheckout);
