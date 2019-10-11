@@ -104,9 +104,11 @@ header {
 }
 
 /*  Hamburger Icon  */
+
 .menu-wrap {
     display: none;
     position: absolute;
+    height: 50px;
 }
 
 .toggler {
@@ -581,6 +583,7 @@ main {
         display: flex;
         flex-direction: column;
         width: 96vw;
+        padding: 0;
     }
 
     .banner-box {

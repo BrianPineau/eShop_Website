@@ -5,6 +5,7 @@ const snowboardBtn = document.getElementById("header-snowboard-button");
 const skiBtn = document.getElementById("header-ski-button");
 const addCart = document.getElementById('button-1');
 const cartUpdate = document.querySelector('.header-cart-item');
+const openButton = document.querySelector(".toggler");
 
 /*  Header Scroll Pop Out  */
 window.addEventListener('scroll', function() {
@@ -90,8 +91,9 @@ let navAppear = () => {
 
 let toggleNavStatus = false;
 
-let toggleNav = function (){
-    let mobileDrop = document.querySelector(".mobile-header-drop");
+let toggleNav = function () {
+    const mobileDrop = document.querySelector(".mobile-header-drop");
+    const menuWrap = document.querySelector(".menu-wrap");
     
 //menu extends with button click
     if (toggleNavStatus === false) {
@@ -145,5 +147,6 @@ searchToggle.addEventListener("click", navAppear)
 addCart.addEventListener("click", checkoutIndic);
 snowboardBtn.addEventListener("click", openMenu);
 skiBtn.addEventListener("click", openMenu2);
+openButton.addEventListener("click", toggleNav);
 //addCart.addEventListener('click', updateCheckout);
 
