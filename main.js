@@ -19,28 +19,6 @@ window.addEventListener('scroll', function() {
 });
 
 
-
-
-/*  Header Drop Menus  */
-/*
-function openMenu() {
-    document.getElementById("snowboard-drop").classList.toggle("active");
-}
-
-//Click outside of drop menu to close menu
-window.addEventListener('mouseup', function (e) {
-    const snowboardAway = document.getElementById("snowboard-drop");
-    if (e.target != snowboardAway) {
-        snowboardAway.classList = ' snowboard-drop';
-    }
-});
-
-function openMenu2() {
-    document.getElementById("ski-drop").classList.toggle("active");
-}
-*/
-
-
 /* Header Drop Menus */
 let toggleMenu = false;
 
@@ -58,14 +36,6 @@ let dropMenu = document.getElementById("snowboard-drop");
   }
 
 }
-
-
-/*  Search Bar Appear  */
-/*
-function searchAppear() {
-    document.querySelector(".search-text").classList.toggle(".search-text-appear");
-}
-*/
 
 
 /*  Search Bar Appear  */
@@ -106,34 +76,6 @@ let toggleNav = function () {
         toggleNavStatus = false;
     }
 }
-
-
-/*
-let mobileDrop = document.querySelector(".mobile-header-drop");
-let OPEN_CLASS = '.mobile-header-drop.mobile-drop-extend'
-let menuBtn = document.querySelector('toggler');
-
-const addOffClick = (e, cb) => {
-    const offClick = (evt) => {
-      if (e !== evt) {
-        cb()
-        document.removeEventListener('click', offClick)
-      }
-    }
-    document.addEventListener('click', offClick)
-  }
-  
-  const handleClick = (e) => {
-    const toggleMenu = () => mobileDrop.classList.toggle(OPEN_CLASS)
-    if (propCheck.checked) e.stopPropagation()
-    if (!menu.classList.contains(OPEN_CLASS)) {
-      toggleMenu()
-      addOffClick(e, toggleMenu)
-    }
-  }
-  
-  menuBtn.addEventListener('click', handleClick)
-*/
 
 
 /*  Cart Full Indicator  */

@@ -423,7 +423,7 @@ header {
 
     .mobile-header-drop {
         top: 0;
-        left: -34px;
+        left: -338px;
     }
 }
 
@@ -766,7 +766,7 @@ main {
 
     .sales-items-img img {
         height: auto;
-        max-width: 210px;
+        max-width: 160px;
     }
 
     .sales-items-text {
