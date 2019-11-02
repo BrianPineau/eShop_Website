@@ -40,7 +40,7 @@ let dropMenu = document.getElementById("snowboard-drop");
 
 /*  Search Bar Appear  */
 let toggleSearch = false;
-let searchToggle = document.querySelector('.search-bar');
+let searchToggle = document.querySelector('.search-catalyst');
 let searchAppear = document.querySelector('.search-text');
 
 let navAppear = () => {
@@ -84,11 +84,12 @@ const checkoutIndic = function () {
 };
 
 
+
+
 /*  Event Listeners  */
 searchToggle.addEventListener("click", navAppear)
 addCart.addEventListener("click", checkoutIndic);
 snowboardBtn.addEventListener("click", openMenu);
 skiBtn.addEventListener("click", openMenu2);
 openButton.addEventListener("click", toggleNav);
-//addCart.addEventListener('click', updateCheckout);
 

@@ -12,42 +12,150 @@
 <body>
   <!--  Header Section  -->
 
-    
   <header>
     <div class="container">
-  
-        <div class="mobile-header">
-            <span class="mobile-hamburger-icon">Menu</span>
-            <span class="header-title">Snowdevil</span>
-            <span class="checkout">Bye Man!</span>
-        </div>
-  
-        <div class="header-top-row">
-            <div class="header-drop-menu-icon">Hey-o!</div>
-            <a href="../../index.html"><div class="header-title">
-                  Snowdevil
-            </div></a>
-  
-            <div class="icon-set">
-                <div class="search-bar"><img src="../Pictures/mag.png" alt="magnifying glass"></div>
-                <div class="checkout"><img src="../pictures/cart.png" alt="shopping cart"><div class="header-cart-item"></div></div>
+
+      <div class="mobile-header">
+          <span class="header-title">Snowdevil</span>
+          <img src="./../Pictures/mag.png" class="checkout" alt="Search bar">
+      </div>
+
+      <div class="header-top-row">
+          <a href="./../../index.html" class="header-title">
+              SnowPeak
+          </a>
+
+          <div class="icon-set">
+
+            <div class="search-bar">
+              <input class="search-text" type="text" placeholder="Search">
+              <a class="search-button">
+                <img src="./../Pictures/mag.png" alt="Search bar">
+              </a>
             </div>
-        </div>
-  
-        <ul class="header-menu">
-            <li id="first-menu-item"><a href="">Home</a></li>
-            <li id="header-snowboard-button"><a href="#">Snowboard</a></li>
-            <li id="header-ski-button"><a href="#">Ski</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Brands</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Sale</a></li>
-            <li class="header-final-list-item"><a href="">Account</a></li>
-        </ul>
-        <span class="header-hamburger-icon">Menu</span>
+
+            <div class="checkout"><img src="./../pictures/cart.png" alt="checkout cart"></div>
+          </div>
+      </div>
+
+<!--  Hamburger Icon  -->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" onclick="toggleNav()">
+        <div class="hamburger"><div></div></div>
+
+<!--  Mobile Side Menu  -->
+      <section class="mobile-header-drop">
+              
+          <ul class="mobile-header-body">
+              <a href="./../../index.html"><li class="mobile-item mobile-sec-1">home</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-2">snowboard</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-3">ski</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-4">men</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-5">women</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-6">brands</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-7">accessories</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-8">sale</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-9">account</li></a>
+          </ul>
+      </section>
+      </div>
+
+<!--  Header Bottom Row  -->
+
+      <ul class="header-menu">
+          <li id="first-menu-item"><a href="">Home</a></li>
+          <li id="header-snowboard-button"><a href="#">Snowboard</a></li>
+          <li id="header-ski-button"><a href="#">Ski</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Sale</a></li>
+          <li class="header-final-list-item"><a href="">Account</a></li>
+      </ul>
+
     </div>
+
+
+    <!--  Header drop down menu  -->
+    <div id="snowboard-drop" class="header-drop snowboard-drop">
+        <div class="inner-drop-container">
+
+          <div class="header-drop-info-box header-drop1">
+            <h3>SNOWBOARD</h3>
+            <span>All</span>
+            <span>Snowboards</span>
+            <span>Boots</span>
+          </div>
+
+          <div class="header-drop-box header-drop2">
+              <img src="./Resources/Pictures/banner1.png" alt="snowboard">
+              <span class="header-drop-span">Tone Snowboard</span>
+              <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop3">
+              <img src="./Resources/Pictures/banner1.png" alt="snowboard">
+              <span class="header-drop-span">Mega</span>
+              <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop4">
+              <img src="./Resources/Pictures/bind3.png" alt="snowboard">
+              <span class="header-drop-span">Cartel</span>
+              <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop5">
+              <img src="./Resources/Pictures/bind4.png" alt="snowboard">
+              <span class="header-drop-span">Tesla</span>
+              <span class="drop-2nd-span">$322.46</span>
+          </div>
+          
+
+        </div>
+    </div>
+
+    <div id="ski-drop" class="header-drop ski-drop">
+        <div class="inner-drop-container">
+
+          <div class="header-drop-info-box header-drop1">
+            <h3>SKI</h3>
+            <span>All</span>
+            <span>Snowboards</span>
+            <span>Boots</span>
+          </div>
+
+          <div class="header-drop-box header-drop2">
+            <img src="./Resources/Pictures/banner1.png" alt="snowboard">
+            <span class="header-drop-span">Tone Snowboard</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop3">
+            <img src="./Resources/Pictures/banner1.png" alt="snowboard">
+            <span class="header-drop-span">Mega</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop4">
+            <img src="./Resources/Pictures/bind3.png" alt="snowboard">
+            <span class="header-drop-span">Cartel</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop5">
+            <img src="./Resources/Pictures/bind4.png" alt="snowboard">
+            <span class="header-drop-span">Tesla</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+            
+
+        </div>
+    </div>
+
   </header>
+  
 
 <!--  Body Section  -->
 
