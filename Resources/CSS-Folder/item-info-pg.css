@@ -54,6 +54,7 @@ header {
 .header-title {
     display: inline-block;
     color: white;
+    font-weight: 700;
 }
 
 .icon-set {

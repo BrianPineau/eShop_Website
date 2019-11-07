@@ -54,6 +54,11 @@ header {
 .header-title {
     display: inline-block;
     color: white;
+    font-weight: 700;
+}
+
+.header-title a {
+    color: inherit;
 }
 
 .icon-set {
@@ -665,6 +670,12 @@ header {
     }
 }
 
+@media only screen and (max-width: 550px) {
+    .demo-title {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 416px) {
 
     .body-outer-container {
@@ -672,7 +683,7 @@ header {
     }
 
     .body-title{
-        margin: 38px auto 0;
+        margin: 0 auto 0;
     }
 
     .demo-title {
