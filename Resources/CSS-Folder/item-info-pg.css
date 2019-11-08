@@ -57,6 +57,10 @@ header {
     font-weight: 700;
 }
 
+.header-title a {
+    color: white;
+}
+
 .icon-set {
     display: inline-flex;
     float: right;
@@ -568,6 +572,7 @@ aside {
     height: 100%;
     width: 100%;
     background-color: #F7F7F7;
+    color: inherit;
     transition: 0.08s ease-out;
 }
 
