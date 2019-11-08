@@ -7,6 +7,7 @@
 }
 
 a {
+    color: inherit;
     text-decoration: inherit;
 }
 
@@ -433,6 +434,12 @@ header {
     }
 }
 
+@media only screen and (max-width: 490px) {
+    .hamburger {
+        margin-left: 2vw;
+    }
+}
+
 
 /*  Banner Section  */
 
@@ -442,6 +449,7 @@ header {
     background-repeat: no-repeat;
     background-image: url('./resources/pictures/mountains-banner.jpg');
     margin-top: 100px;
+    overflow: hidden;
 }
 
 main {
@@ -462,9 +470,17 @@ main {
     font-size: 60px;
     letter-spacing: 0.1em;
     color: white;
+    background-color: #006EFF;
 }
 
-.banner-title {
+.banner-title-mobile {
+    display: none;
+    padding: 0 10px;
+    font-family: "Unica One";
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    color: white;
     background-color: #006EFF;
 }
 
@@ -599,6 +615,16 @@ main {
     .sales-title-section img {
         justify-content: center;
         margin: auto;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .banner-title {
+        display: none;
+    }
+
+    .banner-title-mobile {
+        display: inline-block;
     }
 }
 
