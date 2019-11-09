@@ -938,17 +938,15 @@ button {
 }
 
 @media only screen and (max-width: 895px) {
-    footer {
-        height: 790px;
-    }
-
-
     .email-form {
         width: 62%;
     }
 }
 
 @media only screen and (max-width: 750px) {
+    footer {
+        height: 790px;
+    }
 
     .footer-container {
         display: flex;
@@ -963,6 +961,7 @@ button {
     }
 
     .email-form {
-        width: 85%;
-    }
+        max-width: 100%;
+        min-width: 80%
+    } 
 }

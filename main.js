@@ -18,7 +18,7 @@ window.addEventListener('scroll', function() {
 let toggleSearch = false;
 let searchToggle = document.querySelector('.search-catalyst');
 let searchAppear = document.querySelector('.search-text');
-
+ 
 let navAppear = () => {
     if (toggleSearch === false) {
         searchAppear.style.display = 'block';
