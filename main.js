@@ -53,6 +53,33 @@ let toggleNav = function () {
     }
 }
 
+/*   Banner Image Change   */
+const imageZero = document.getElementById('image-0');
+const imageOne = document.getElementById('image-1');
+const imageTwo = document.getElementById('image-2');
+const leftArrow = document.getElementById('arrow-left');
+const rightArrow = document.getElementById('arrow-right');
+let picCounter = 0;
+
+
+const movePicLeft = () => {
+    console.log('it works fool!');
+}
+
+const movePicRight = () => {
+    document.getElementById('image-' + picCounter).classList.add('active-image');
+    picCounter++;
+    if(picCounter > 2) {
+        picCounter = 0;
+    }
+
+    console.log(picCounter);
+}
+
+leftArrow.addEventListener('click', movePicLeft);
+rightArrow.addEventListener('click', movePicRight);
+
+
 
 /*  Event Listeners  */
 searchToggle.addEventListener("click", navAppear);

@@ -452,6 +452,38 @@ header {
     overflow: hidden;
 }
 
+.image-slider-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 588px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.slider-image {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+}
+
+.image-0 {
+    
+}
+
+.image-1 {
+
+}
+
+.active-image {
+    top: 0;
+    left: 0;
+}
+
 main {
     max-width: 1170px;
     margin: 0 auto;
