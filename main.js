@@ -59,21 +59,67 @@ const imageOne = document.getElementById('image-1');
 const imageTwo = document.getElementById('image-2');
 const leftArrow = document.getElementById('arrow-left');
 const rightArrow = document.getElementById('arrow-right');
-let picCounter = 0;
+let heroCounter = 0;
+
+
 
 
 const movePicLeft = () => {
-    console.log('it works fool!');
+    if(heroCounter === 0) {
+        imageZero.classList.remove('right-image');
+        imageZero.classList.add('left-image');
+        imageOne.classList.remove('left-image');
+        imageOne.classList.add('active-image');
+        imageTwo.classList.remove('active-image');
+        imageTwo.classList.add('right-image');
+        heroCounter = 2;
+    } else if (heroCounter === 2) {
+        imageTwo.classList.remove('right-image');
+        imageTwo.classList.add('left-image');
+        imageZero.classList.remove('left-image');
+        imageZero.classList.add('active-image');
+        imageOne.classList.remove('active-image');
+        imageOne.classList.add('right-image');
+        heroCounter--;
+    } else if (heroCounter === 1) {
+        imageOne.classList.remove('right-image');
+        imageOne.classList.add('left-image');
+        imageTwo.classList.remove('left-image');
+        imageTwo.classList.add('active-image');
+        imageZero.classList.remove('active-image');
+        imageZero.classList.add('right-image');
+        heroCounter--;
+    }
 }
 
 const movePicRight = () => {
-    document.getElementById('image-' + picCounter).classList.add('active-image');
-    picCounter++;
-    if(picCounter > 2) {
-        picCounter = 0;
+    if(heroCounter === 0) {
+        imageZero.classList.remove('active-image');
+        imageZero.classList.add('left-image');
+        imageOne.classList.remove('right-image');
+        imageOne.classList.add('active-image');
+        imageTwo.classList.remove('left-image');
+        imageTwo.classList.add('right-image');
+        heroCounter++;
+    } else if (heroCounter === 1) {
+        imageOne.classList.remove('active-image');
+        imageOne.classList.add('left-image');
+        imageTwo.classList.remove('right-image');
+        imageTwo.classList.add('active-image');
+        imageZero.classList.remove('left-image');
+        imageZero.classList.add('right-image');
+        heroCounter++;
+    } else if (heroCounter === 2) {
+        imageTwo.classList.remove('active-image');
+        imageTwo.classList.add('left-image');
+        imageZero.classList.remove('right-image');
+        imageZero.classList.add('active-image');
+        imageOne.classList.remove('left-image');
+        imageOne.classList.add('right-image');
+        heroCounter = 0;
     }
 
-    console.log(picCounter);
+
 }
 
 leftArrow.addEventListener('click', movePicLeft);
