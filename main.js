@@ -62,7 +62,9 @@ const rightArrow = document.getElementById('arrow-right');
 let heroCounter = 0;
 
 
-
+window.onload = () => {
+    nextHeroLoop();
+}
 
 const movePicLeft = () => {
 
@@ -95,41 +97,45 @@ const movePicLeft = () => {
 
 const nextHeroLoop = () => {
     if(heroCounter === 0) {
-        imageTwo.style.opacity = '0';
+        imageOne.style.opacity = '0';
         
         imageZero.style.right = '0px';
-        imageZero.style.zIndex = '1000';
+        imageZero.style.zIndex = '1500';
         imageOne.style.right = '-100%';
-        imageOne.style.zIndex = '1500';
+        imageOne.style.zIndex = '500';
         imageTwo.style.right = '100%';
-        imageTwo.style.zIndex = '500';
-        imageTwo.style.opacity = '1';
-        heroCounter = 1;
+        imageTwo.style.zIndex = '1000';
+        imageOne.style.opacity = '1';
+        setTimeout(function () {
+            heroCounter = 1;
+        }, 500);
     } else if (heroCounter === 1) {
-        imageZero.style.opacity = '0';
+        imageTwo.style.opacity = '0';
 
         imageOne.style.right = '0px';
-        imageOne.style.zIndex = '1000';
+        imageOne.style.zIndex = '1500';
         imageTwo.style.right = '-100%';
-        imageTwo.style.zIndex = '1500';
+        imageTwo.style.zIndex = '500';
         imageZero.style.right = '100%';
-        imageZero.style.zIndex = '500';
-        imageZero.style.opacity = '1';
-        heroCounter = 2;
+        imageZero.style.zIndex = '1000';
+        imageTwo.style.opacity = '1';
+        setTimeout(function () {
+            heroCounter = 2;
+        }, 500);
     } else if (heroCounter === 2) {
-        imageOne.style.opacity = '0';
+        imageZero.style.opacity = '0';
 
         imageTwo.style.right = '0px';
-        imageTwo.style.zIndex = '1000';
+        imageTwo.style.zIndex = '1500';
         imageZero.style.right = '-100%';
-        imageZero.style.zIndex = '1500';
+        imageZero.style.zIndex = '500';
         imageOne.style.right = '100%';
-        imageOne.style.zIndex = '500';
-        imageOne.style.opacity = '1';
-        heroCounter = 0;
-    }
-
-
+        imageOne.style.zIndex = '1000';
+        imageZero.style.opacity = '1';
+        setTimeout(function () {
+            heroCounter = 0;
+        }, 500);
+    };
 }
 
 leftArrow.addEventListener('click', movePicLeft);
