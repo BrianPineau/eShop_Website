@@ -65,57 +65,67 @@ let heroCounter = 0;
 
 
 const movePicLeft = () => {
-    if(heroCounter === 0) {
-        imageZero.classList.remove('right-image');
-        imageZero.classList.add('left-image');
-        imageOne.classList.remove('left-image');
-        imageOne.classList.add('active-image');
-        imageTwo.classList.remove('active-image');
-        imageTwo.classList.add('right-image');
-        heroCounter = 2;
-    } else if (heroCounter === 2) {
-        imageTwo.classList.remove('right-image');
-        imageTwo.classList.add('left-image');
-        imageZero.classList.remove('left-image');
-        imageZero.classList.add('active-image');
-        imageOne.classList.remove('active-image');
-        imageOne.classList.add('right-image');
-        heroCounter--;
-    } else if (heroCounter === 1) {
-        imageOne.classList.remove('right-image');
-        imageOne.classList.add('left-image');
-        imageTwo.classList.remove('left-image');
-        imageTwo.classList.add('active-image');
-        imageZero.classList.remove('active-image');
-        imageZero.classList.add('right-image');
-        heroCounter--;
-    }
+
+    // if(heroCounter === 0) {
+    //     imageZero.classList.remove('right-image');
+    //     imageZero.classList.add('left-image');
+    //     imageOne.classList.remove('left-image');
+    //     imageOne.classList.add('active-image');
+    //     imageTwo.classList.remove('active-image');
+    //     imageTwo.classList.add('right-image');
+    //     heroCounter = 2;
+    // } else if (heroCounter === 2) {
+    //     imageTwo.classList.remove('right-image');
+    //     imageTwo.classList.add('left-image');
+    //     imageZero.classList.remove('left-image');
+    //     imageZero.classList.add('active-image');
+    //     imageOne.classList.remove('active-image');
+    //     imageOne.classList.add('right-image');
+    //     heroCounter--;
+    // } else if (heroCounter === 1) {
+    //     imageOne.classList.remove('right-image');
+    //     imageOne.classList.add('left-image');
+    //     imageTwo.classList.remove('left-image');
+    //     imageTwo.classList.add('active-image');
+    //     imageZero.classList.remove('active-image');
+    //     imageZero.classList.add('right-image');
+    //     heroCounter--;
+    // }
 }
 
-const movePicRight = () => {
+const nextHeroLoop = () => {
     if(heroCounter === 0) {
-        imageZero.classList.remove('active-image');
-        imageZero.classList.add('left-image');
-        imageOne.classList.remove('right-image');
-        imageOne.classList.add('active-image');
-        imageTwo.classList.remove('left-image');
-        imageTwo.classList.add('right-image');
-        heroCounter++;
+        imageTwo.style.opacity = '0';
+        
+        imageZero.style.right = '0px';
+        imageZero.style.zIndex = '1000';
+        imageOne.style.right = '-100%';
+        imageOne.style.zIndex = '1500';
+        imageTwo.style.right = '100%';
+        imageTwo.style.zIndex = '500';
+        imageTwo.style.opacity = '1';
+        heroCounter = 1;
     } else if (heroCounter === 1) {
-        imageOne.classList.remove('active-image');
-        imageOne.classList.add('left-image');
-        imageTwo.classList.remove('right-image');
-        imageTwo.classList.add('active-image');
-        imageZero.classList.remove('left-image');
-        imageZero.classList.add('right-image');
-        heroCounter++;
+        imageZero.style.opacity = '0';
+
+        imageOne.style.right = '0px';
+        imageOne.style.zIndex = '1000';
+        imageTwo.style.right = '-100%';
+        imageTwo.style.zIndex = '1500';
+        imageZero.style.right = '100%';
+        imageZero.style.zIndex = '500';
+        imageZero.style.opacity = '1';
+        heroCounter = 2;
     } else if (heroCounter === 2) {
-        imageTwo.classList.remove('active-image');
-        imageTwo.classList.add('left-image');
-        imageZero.classList.remove('right-image');
-        imageZero.classList.add('active-image');
-        imageOne.classList.remove('left-image');
-        imageOne.classList.add('right-image');
+        imageOne.style.opacity = '0';
+
+        imageTwo.style.right = '0px';
+        imageTwo.style.zIndex = '1000';
+        imageZero.style.right = '-100%';
+        imageZero.style.zIndex = '1500';
+        imageOne.style.right = '100%';
+        imageOne.style.zIndex = '500';
+        imageOne.style.opacity = '1';
         heroCounter = 0;
     }
 
@@ -123,7 +133,7 @@ const movePicRight = () => {
 }
 
 leftArrow.addEventListener('click', movePicLeft);
-rightArrow.addEventListener('click', movePicRight);
+rightArrow.addEventListener('click', nextHeroLoop);
 
 
 

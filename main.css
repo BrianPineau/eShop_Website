@@ -474,8 +474,9 @@ header {
     -webkit-transition: all ease-in-out 500ms;
 }
 
+/* 
 .left-image {
-    left: 100%;
+    left: -100%;
 }
 
 .active-image {
@@ -484,8 +485,9 @@ header {
 }
 
 .right-image {
-    left: -100%;
+    left: 100%;
 }
+*/
 
 main {
     max-width: 1170px;
