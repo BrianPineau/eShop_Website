@@ -22,6 +22,7 @@ body {
     text-transform: uppercase;
     background-color: #F7F7F7;
     transition: all 300ms ease-in-out;
+    overflow-x: hidden;
 }
 
 /*  Header Section  */
@@ -470,24 +471,17 @@ header {
     background-size: cover;
     width: 100%;
     height: 588px;
-    transition: all ease-in-out 500ms;
-    -webkit-transition: all ease-in-out 500ms;
+    animation: slide 2s ease;
 }
 
-/* 
-.left-image {
-    left: -100%;
+@keyframes slide {
+    0% {
+        opacity: 0; transform: scale(1.1);
+    }
+    100% {
+        opacity: 1; transform: scale(1);
+    }
 }
-
-.active-image {
-    left: 0;
-    z-index: 100;
-}
-
-.right-image {
-    left: 100%;
-}
-*/
 
 main {
     max-width: 1170px;
@@ -508,6 +502,7 @@ main {
     letter-spacing: 0.1em;
     color: white;
     background-color: #006EFF;
+    cursor: default;
 }
 
 .banner-title-mobile {
@@ -526,17 +521,24 @@ main {
     padding: 0; 
 }
 
-.banner-title-box li:hover {
-    color: black;
-    background: white;
-    transition: all 0.2s ease-in-out;
-}
-
 .banner-title-box li {
     margin:  10px 1px 20px;
     padding: 12px;
     color: white;
     background-color: #171717;
+    cursor: pointer;
+}
+
+.banner-list-wrapper li:nth-child(1) {
+    cursor: default;
+}
+
+.banner-list-wrapper li:nth-child(2):hover,
+.banner-list-wrapper li:nth-child(3):hover,
+.banner-list-wrapper li:nth-child(4):hover {
+    color: black;
+    background: white;
+    transition: all 0.2s ease-in-out;
 }
 
 @media only screen and (max-width: 1160px) {
