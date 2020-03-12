@@ -54,19 +54,24 @@ let toggleNav = function () {
 }
 
 /*   Banner Image Change   */
-const imageZero = document.getElementById('image-0');
-const imageOne = document.getElementById('image-1');
-const imageTwo = document.getElementById('image-2');
+const slides = document.getElementById('banner-slider-container').children;
 const leftArrow = document.getElementById('arrow-left');
 const rightArrow = document.getElementById('arrow-right');
 const imageNumberDisp = document.getElementById('banner-image-counter');
+let bannerStatus = 0;
 
 
+const nextImage = () => {
+    if (bannerStatus == slides.length + 1) {
+        bannerStatus = 0;
+    } else {
+        bannerStatus++;
+    }
+    console.log(bannerStatus);
+}
 
-leftArrow.addEventListener('click', movePicLeft);
+//leftArrow.addEventListener('click', prevImage);
 rightArrow.addEventListener('click', nextImage);
-
-
 
 /*  Event Listeners  */
 searchToggle.addEventListener("click", navAppear);
