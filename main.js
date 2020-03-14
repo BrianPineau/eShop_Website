@@ -60,17 +60,34 @@ const rightArrow = document.getElementById('arrow-right');
 const imageNumberDisp = document.getElementById('banner-image-counter');
 let bannerStatus = 0;
 
+const prevImage = () => {
+    if (bannerStatus === 0) {
+        bannerStatus = slides.length - 1;
+    } else {
+        bannerStatus--;
+    }
+    changeImage();
+}
 
 const nextImage = () => {
-    if (bannerStatus == slides.length + 1) {
+    if (bannerStatus === slides.length - 1) {
         bannerStatus = 0;
     } else {
         bannerStatus++;
     }
+    changeImage();
     console.log(bannerStatus);
+    console.log(slides);
 }
 
-//leftArrow.addEventListener('click', prevImage);
+const changeImage = () => {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+    slides[bannerStatus].classList.add('active');
+}
+
+leftArrow.addEventListener('click', prevImage);
 rightArrow.addEventListener('click', nextImage);
 
 /*  Event Listeners  */
