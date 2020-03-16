@@ -62,6 +62,9 @@ const imageNumberDisp = document.getElementById('banner-image-counter');
 let bannerStatus = 0;
 
 
+window.onload = () => {
+    changeImage();
+}
 
 //Switch to next banner image
 const prevImage = () => {
