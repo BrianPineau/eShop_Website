@@ -449,7 +449,6 @@ header {
     background-size: 100% 588px;
     background-position: top;
     background-repeat: no-repeat;
-    /* background-image: url('./resources/pictures/mountains-banner.jpg'); */
     margin-top: 100px;
     overflow: hidden;
 }
@@ -566,6 +565,8 @@ main {
 }
 
 @media only screen and (max-width: 970px) {
+    
+
     .banner-title-wrapper {
         width: 500px;
         height: auto;
@@ -577,6 +578,10 @@ main {
 }
 
 @media only screen and (max-width: 750px) {
+    .banner-title-mobile-wrapper h1 {
+        font-size: 36px;
+    }
+
     .banner-title-wrapper h1 {
         font-size: 36px;
     }
