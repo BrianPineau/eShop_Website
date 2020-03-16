@@ -96,6 +96,8 @@ const changeImage = () => {
     }
     slides[bannerStatus].classList.add('active');
     captions[bannerStatus].classList.add('visable');
+    slideNum = bannerStatus + 1;
+    imageNumberDisp.innerHTML = `${slideNum}/3`;
 }
 
 leftArrow.addEventListener('click', prevImage);
