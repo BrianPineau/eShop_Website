@@ -499,7 +499,7 @@ main {
 }
 
 .banner-title {
-    display: inline-block;
+    display: none;
     padding: 0 10px;
     font-family: "Unica One";
     font-weight: 400;
@@ -511,6 +511,10 @@ main {
     opacity: 0;
     animation: moveText 0.5s ease forwards;
     animation-delay: 0.5s;
+}
+
+.banner-title.visable {
+    display: inline-block;
 }
 
 @keyframes moveText {

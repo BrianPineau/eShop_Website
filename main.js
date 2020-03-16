@@ -55,11 +55,15 @@ let toggleNav = function () {
 
 /*   Banner Image Change   */
 const slides = document.getElementById('banner-slider-container').children;
+const captions = document.getElementById('banner-title-container').children;
 const leftArrow = document.getElementById('arrow-left');
 const rightArrow = document.getElementById('arrow-right');
 const imageNumberDisp = document.getElementById('banner-image-counter');
 let bannerStatus = 0;
 
+
+
+//Switch to next banner image
 const prevImage = () => {
     if (bannerStatus === 0) {
         bannerStatus = slides.length - 1;
@@ -69,6 +73,7 @@ const prevImage = () => {
     changeImage();
 }
 
+//Switch to previous banner image
 const nextImage = () => {
     if (bannerStatus === slides.length - 1) {
         bannerStatus = 0;
@@ -80,11 +85,14 @@ const nextImage = () => {
     console.log(slides);
 }
 
+
 const changeImage = () => {
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove('active');
+        captions[i].classList.remove('visable');
     }
     slides[bannerStatus].classList.add('active');
+    captions[bannerStatus].classList.add('visable');
 }
 
 leftArrow.addEventListener('click', prevImage);
