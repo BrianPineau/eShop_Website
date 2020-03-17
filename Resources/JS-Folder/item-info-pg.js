@@ -17,8 +17,8 @@ const openButton = document.querySelector(".toggler");
 /*  Header Scroll Pop Out  */
 window.addEventListener('scroll', function() {
     if (window.pageYOffset > 40) {
-        headerCollapse.classList += ' pop-out';
-        moveIcons.classList += ' icon-move';
+        headerCollapse.classList.add('pop-out');
+        moveIcons.classList.add('icon-move');
     } else {
         headerCollapse.classList = 'header';
         moveIcons.classList = ' icon-set';
