@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0; 
-    border: 0;
+    border: 0; 
 }
 
 a {
@@ -788,14 +788,14 @@ main {
 .sales-first-box-text {
     height: 100%;
     padding-top: 240px;
-    background-image: url("./resources/pictures/sales-items-header1.jpg");
+    background-image: url("./Resources/Pictures/sales-items-header1.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .sales-first-box-text-ii {
     padding-top: 200px;
-    background-image: url("./resources/pictures/sales-items-header2.jpg");
+    background-image: url("./Resources/Pictures/sales-items-header2.jpg");
 }
 
 .sales-box1 h2 {

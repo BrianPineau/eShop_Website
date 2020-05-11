@@ -5,7 +5,7 @@ const openButton = document.querySelector(".toggler");
 
 /*  Header Scroll Pop Out  */
 window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 40) {
+    if (window.pageYOffset > 40) { 
         headerCollapse.classList.add('pop-out');
         moveIcons.classList.add('icon-move');
     } else {
@@ -100,10 +100,10 @@ const changeImage = () => {
     imageNumberDisp.innerHTML = `${slideNum}/3`;
 }
 
+/*  Event Listeners  */
 leftArrow.addEventListener('click', prevImage);
 rightArrow.addEventListener('click', nextImage);
 
-/*  Event Listeners  */
 searchToggle.addEventListener("click", navAppear);
 skiBtn.addEventListener("click", openMenu2);
 openButton.addEventListener("click", toggleNav);

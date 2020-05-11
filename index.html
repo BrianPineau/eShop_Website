@@ -1,496 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SnowPeak</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Unica+One" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="./main.css">
-    <link rel="stylesheet" type="text/javascript" src="./main.js">
-
-</head>
-<body>
-
-<!--  Header Section  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700|Unica+One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="stylesheet" type="text/javascript" src="./main.js" />
+  </head>
+  <body>
+    <!--  Header Section  -->
     <header>
       <div class="container">
-
         <div class="mobile-header">
-            <span class="header-title">Snowpeak</span>
-            <img src="./Resources/Pictures/mag.png" class="checkout" alt="Search bar">
+          <span class="header-title">Snowpeak</span>
+          <img
+            src="./Resources/Pictures/mag.png"
+            class="checkout"
+            alt="Search bar"
+          />
         </div>
 
         <div class="header-top-row">
-            <div class="header-title">
-                SnowPeak
+          <div class="header-title">
+            SnowPeak
+          </div>
+
+          <div class="icon-set">
+            <span class="search-catalyst"></span>
+            <div class="search-bar">
+              <input class="search-text" type="text" placeholder="Search" />
+              <img src="./Resources/Pictures/mag.png" alt="Search bar" />
             </div>
 
-            <div class="icon-set">
-              
-              <span class="search-catalyst"></span>
-              <div class="search-bar">
-                <input class="search-text" type="text" placeholder="Search">
-                  <img src="./Resources/Pictures/mag.png" alt="Search bar">
-              </div>
-
-              <div class="checkout"><img src="./resources/pictures/cart.png" alt="checkout cart"></div>
+            <div class="checkout">
+              <img src="./Resources/Pictures/cart.png" alt="checkout cart" />
             </div>
+          </div>
         </div>
 
-<!--  Hamburger Icon  -->
+        <!--  Hamburger Icon  -->
         <div class="menu-wrap">
-          <input type="checkbox" class="toggler" onclick="toggleNav()">
+          <input type="checkbox" class="toggler" onclick="toggleNav()" />
           <div class="hamburger"><div></div></div>
 
-<!--  Mobile Side Menu  -->
-        <section class="mobile-header-drop">
-                
+          <!--  Mobile Side Menu  -->
+          <section class="mobile-header-drop">
             <ul class="mobile-header-body">
-                <a href="#"><li class="mobile-item mobile-sec-1">home</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-2">snowboard</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-3">ski</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-4">men</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-5">women</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-6">brands</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-7">accessories</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-8">sale</li></a>
-                <a href="./Resources/HTML-Folder/ItemListPg.html"><li class="mobile-item mobile-sec-9">account</li></a>
+              <a href="#"><li class="mobile-item mobile-sec-1">home</li></a>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-2">snowboard</li></a
+              >
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-3">ski</li></a
+              >
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-4">men</li></a
+              >
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-5">women</li></a
+              >
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-6">brands</li></a
+              >
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-7">accessories</li></a
+              >
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-8">sale</li></a
+              >
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                ><li class="mobile-item mobile-sec-9">account</li></a
+              >
             </ul>
-        </section>
+          </section>
         </div>
 
-<!--  Header Bottom Row  -->
+        <!--  Header Bottom Row  -->
 
         <ul class="header-menu">
-            <li id="first-menu-item"><a href="#">Home</a></li>
-            <li id="header-snowboard-button"><a href="./Resources/HTML-Folder/ItemListPg.html">Snowboard</a></li>
-            <li id="header-ski-button"><a href="./Resources/HTML-Folder/ItemListPg.html">Ski</a></li>
-            <li><a href="./Resources/HTML-Folder/ItemListPg.html">Men</a></li>
-            <li><a href="./Resources/HTML-Folder/ItemListPg.html">Women</a></li>
-            <li><a href="./Resources/HTML-Folder/ItemListPg.html">Brands</a></li>
-            <li><a href="./Resources/HTML-Folder/ItemListPg.html">Accessories</a></li>
-            <li><a href="./Resources/HTML-Folder/ItemListPg.html">Sale</a></li>
-            <li class="header-final-list-item"><a href="#">Account</a></li>
+          <li id="first-menu-item"><a href="#">Home</a></li>
+          <li id="header-snowboard-button">
+            <a href="./Resources/HTML-Folder/ItemListPg.html">Snowboard</a>
+          </li>
+          <li id="header-ski-button">
+            <a href="./Resources/HTML-Folder/ItemListPg.html">Ski</a>
+          </li>
+          <li><a href="./Resources/HTML-Folder/ItemListPg.html">Men</a></li>
+          <li><a href="./Resources/HTML-Folder/ItemListPg.html">Women</a></li>
+          <li><a href="./Resources/HTML-Folder/ItemListPg.html">Brands</a></li>
+          <li>
+            <a href="./Resources/HTML-Folder/ItemListPg.html">Accessories</a>
+          </li>
+          <li><a href="./Resources/HTML-Folder/ItemListPg.html">Sale</a></li>
+          <li class="header-final-list-item"><a href="#">Account</a></li>
         </ul>
-
       </div>
-
 
       <!--  Header drop down menu  -->
       <div id="snowboard-drop" class="header-drop snowboard-drop">
-          <div class="inner-drop-container">
-
-            <div class="header-drop-info-box header-drop1">
-              <h3>SNOWBOARD</h3>
-              <span>All</span>
-              <span>Snowboards</span>
-              <span>Boots</span>
-            </div>
-
-            <div class="header-drop-box header-drop2">
-                <img src="./Resources/Pictures/banner1.png" alt="snowboard">
-                <span class="header-drop-span">Tone Snowboard</span>
-                <span class="drop-2nd-span">$322.46</span>
-            </div>
-
-            <div class="header-drop-box header-drop3">
-                <img src="./Resources/Pictures/banner1.png" alt="snowboard">
-                <span class="header-drop-span">Mega</span>
-                <span class="drop-2nd-span">$322.46</span>
-            </div>
-
-            <div class="header-drop-box header-drop4">
-                <img src="./Resources/Pictures/bind3.png" alt="snowboard">
-                <span class="header-drop-span">Cartel</span>
-                <span class="drop-2nd-span">$322.46</span>
-            </div>
-
-            <div class="header-drop-box header-drop5">
-                <img src="./Resources/Pictures/bind4.png" alt="snowboard">
-                <span class="header-drop-span">Tesla</span>
-                <span class="drop-2nd-span">$322.46</span>
-            </div>
-            
-
+        <div class="inner-drop-container">
+          <div class="header-drop-info-box header-drop1">
+            <h3>SNOWBOARD</h3>
+            <span>All</span>
+            <span>Snowboards</span>
+            <span>Boots</span>
           </div>
+
+          <div class="header-drop-box header-drop2">
+            <img src="./Resources/Pictures/banner1.png" alt="snowboard" />
+            <span class="header-drop-span">Tone Snowboard</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop3">
+            <img src="./Resources/Pictures/banner1.png" alt="snowboard" />
+            <span class="header-drop-span">Mega</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop4">
+            <img src="./Resources/Pictures/bind3.png" alt="snowboard" />
+            <span class="header-drop-span">Cartel</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop5">
+            <img src="./Resources/Pictures/bind4.png" alt="snowboard" />
+            <span class="header-drop-span">Tesla</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+        </div>
       </div>
 
       <div id="ski-drop" class="header-drop ski-drop">
-          <div class="inner-drop-container">
-  
-            <div class="header-drop-info-box header-drop1">
-              <h3>SKI</h3>
-              <span>All</span>
-              <span>Snowboards</span>
-              <span>Boots</span>
-            </div>
-  
-            <div class="header-drop-box header-drop2">
-              <img src="./Resources/Pictures/banner1.png" alt="snowboard">
-              <span class="header-drop-span">Tone Snowboard</span>
-              <span class="drop-2nd-span">$322.46</span>
-            </div>
-
-            <div class="header-drop-box header-drop3">
-              <img src="./Resources/Pictures/banner1.png" alt="snowboard">
-              <span class="header-drop-span">Mega</span>
-              <span class="drop-2nd-span">$322.46</span>
-            </div>
-
-            <div class="header-drop-box header-drop4">
-              <img src="./Resources/Pictures/bind3.png" alt="snowboard">
-              <span class="header-drop-span">Cartel</span>
-              <span class="drop-2nd-span">$322.46</span>
-            </div>
-
-            <div class="header-drop-box header-drop5">
-              <img src="./Resources/Pictures/bind4.png" alt="snowboard">
-              <span class="header-drop-span">Tesla</span>
-              <span class="drop-2nd-span">$322.46</span>
-            </div>
-              
-  
+        <div class="inner-drop-container">
+          <div class="header-drop-info-box header-drop1">
+            <h3>SKI</h3>
+            <span>All</span>
+            <span>Snowboards</span>
+            <span>Boots</span>
           </div>
-      </div>
 
+          <div class="header-drop-box header-drop2">
+            <img src="./Resources/Pictures/banner1.png" alt="snowboard" />
+            <span class="header-drop-span">Tone Snowboard</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop3">
+            <img src="./Resources/Pictures/banner1.png" alt="snowboard" />
+            <span class="header-drop-span">Mega</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop4">
+            <img src="./Resources/Pictures/bind3.png" alt="snowboard" />
+            <span class="header-drop-span">Cartel</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+
+          <div class="header-drop-box header-drop5">
+            <img src="./Resources/Pictures/bind4.png" alt="snowboard" />
+            <span class="header-drop-span">Tesla</span>
+            <span class="drop-2nd-span">$322.46</span>
+          </div>
+        </div>
+      </div>
     </header>
 
-<!--  Banner Section  -->
+    <!--  Banner Section  -->
     <div class="main-container">
-        <main>
-            <div class="banner-title-box">
-                <div id="banner-title-container" class="banner-title-wrapper">
-                    <h1 class="banner-title">Life without boundaries</h1>
-                    <h1 class="banner-title">Carve your own path</h1>
-                    <h1 class="banner-title">Stay the whole day</h1>
-                </div>
+      <main>
+        <div class="banner-title-box">
+          <div id="banner-title-container" class="banner-title-wrapper">
+            <h1 class="banner-title">Life without boundaries</h1>
+            <h1 class="banner-title">Carve your own path</h1>
+            <h1 class="banner-title">Stay the whole day</h1>
+          </div>
 
-                <div class="banner-title-mobile-wrapper">
-                    <h1 class="banner-title-mobile">Life without<br> boundaries</h1>
-                </div>
-                <ul class="banner-list-wrapper">
-                    <li class="banner-list-item" id="banner-image-counter"></li>
-                    <li class="banner-list-item" id="arrow-left"><</li>
-                    <li class="banner-list-item" id="arrow-right">></li>
-                    <li><a href="./Resources/HTML-Folder/ItemListPg.html">Shop Snowboards</a></li>
-                </ul>
-            </div>
-        </main>
+          <div class="banner-title-mobile-wrapper">
+            <h1 class="banner-title-mobile">
+              Life without<br />
+              boundaries
+            </h1>
+          </div>
+          <ul class="banner-list-wrapper">
+            <li class="banner-list-item" id="banner-image-counter"></li>
+            <li class="banner-list-item" id="arrow-left"><</li>
+            <li class="banner-list-item" id="arrow-right">></li>
+            <li>
+              <a href="./Resources/HTML-Folder/ItemListPg.html"
+                >Shop Snowboards</a
+              >
+            </li>
+          </ul>
+        </div>
+      </main>
 
-        <!--  Banner Second Half  -->
-        <div class="banner-container">
-            <div id="banner-box" class="banner-box banner-item1">
-                <div class="sales-title-section">
-                    <h3>Snowboard</h3>
-                    <a href="#">View All</a>
-                    <img src="./resources/pictures/banner1.png" alt="snow boards">
-                </div>
-                <div class="banner-item-img"></div>
-                <a href="./Resources/HTML-Folder/ItemListPg.html" class="banner-link1" title="Go to item list page"></a>
-            </div>
-
-            <div class="banner-box banner-item2">
-                <div class="sales-title-section">
-                    <h3>Ski</h3>
-                    <a href="#">View All</a>
-                    <img src="./resources/pictures/banner2.png" alt="ski boot">
-                </div>
-                <div class="banner-item-img"></div>
-                <a href="./Resources/HTML-Folder/ItemListPg.html" class="banner-link1" title="Go to item list page"></a>
-            </div>
-
-            <div class="banner-box banner-item3">
-                <div class="sales-title-section">
-                    <h3>Accessories</h3>
-                    <a href="#">View All</a>
-                    <img src="./resources/pictures/banner3.png" alt="snow cap">
-                </div>
-                <div class="banner-item-img"></div>
-                <a href="./Resources/HTML-Folder/ItemListPg.html" class="banner-link1" title="Go to item list page"></a>
-            </div>
+      <!--  Banner Second Half  -->
+      <div class="banner-container">
+        <div id="banner-box" class="banner-box banner-item1">
+          <div class="sales-title-section">
+            <h3>Snowboard</h3>
+            <a href="#">View All</a>
+            <img src="./Resources/Pictures/banner1.png" alt="snow boards" />
+          </div>
+          <div class="banner-item-img"></div>
+          <a
+            href="./Resources/HTML-Folder/ItemListPg.html"
+            class="banner-link1"
+            title="Go to item list page"
+          ></a>
         </div>
 
-        <div class="image-slider-container" id="banner-slider-container">
-            <div id="image-0" class="slide active" style="background-image: url(Resources/Pictures/slide-1.jpg)" alt="Mountains"></div>
-            <div id="image-1" class="slide" style="background-image: url(Resources/Pictures/slide-2.jpg)" alt="Mountains"></div>
-            <div id="image-2" class="slide" style="background-image: url(Resources/Pictures/slide-3.jpg)" alt="Mountains"></div>
+        <div class="banner-box banner-item2">
+          <div class="sales-title-section">
+            <h3>Ski</h3>
+            <a href="#">View All</a>
+            <img src="./Resources/Pictures/banner2.png" alt="ski boot" />
+          </div>
+          <div class="banner-item-img"></div>
+          <a
+            href="./Resources/HTML-Folder/ItemListPg.html"
+            class="banner-link1"
+            title="Go to item list page"
+          ></a>
         </div>
 
-    </div> 
-
-<!--  Sales Items  -->
-    <div class="sales-items-outer-box">
-        <div class="sales-items-container">
-
-            <a class="sales-individual-box sales-box1" href='./Resources/HTML-Folder/ItemListPg.html'>
-                <div class="sales-first-box-text">
-                    <h2>Jackets</h2> 
-                    <br>  
-                    <span>View All</span>        
-                </div>
-            </a>
-
-            <div  class="sales-individual-box sales-box2">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img">
-                        <img src="./resources/pictures/jacket1.png" alt="jacket"/>
-                    </div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Haze Varsity</div>
-                        <span class="sales-item-price">$132.96</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div  class="sales-individual-box sales-box3">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket2.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Greed Jacket</div>
-                        <span class="sales-item-price">From $161</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sales-individual-box sales-box4">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket3.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Restricted Pole Cat</div>
-                        <span class="sales-item-price">$132.96</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  class="sales-individual-box sales-box5 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket5.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">LA</div>
-                        <span class="sales-item-price">From $139.96</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div  class="sales-individual-box sales-box6 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket6.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Campus</div>
-                        <span class="sales-item-price">From $132.96</span>
-                    </div>
-                </div>
-            </div>   
-
-            <div  class="sales-individual-box sales-box7 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket7.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Flint</div>
-                        <span class="sales-item-price">From $139.96</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  class="sales-individual-box sales-box8 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket8.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Frontier</div>
-                        <span class="sales-item-price">From $167.96</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  class="sales-individual-box sales-box9 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket9.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Juana</div>
-                        <span class="sales-item-price">From $959.40</span>
-                    </div>
-                </div>
-            </div>
- 
-            <div  class="sales-individual-box sales-box10 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/jacket10.png" alt="jacket"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Gala</div>
-                        <span class="sales-item-price">From $1399.30</span>
-                    </div>
-                </div>
-            </div>
+        <div class="banner-box banner-item3">
+          <div class="sales-title-section">
+            <h3>Accessories</h3>
+            <a href="#">View All</a>
+            <img src="./Resources/Pictures/banner3.png" alt="snow cap" />
+          </div>
+          <div class="banner-item-img"></div>
+          <a
+            href="./Resources/HTML-Folder/ItemListPg.html"
+            class="banner-link1"
+            title="Go to item list page"
+          ></a>
         </div>
+      </div>
+
+      <div class="image-slider-container" id="banner-slider-container">
+        <div
+          id="image-0"
+          class="slide active"
+          style="background-image: url(Resources/Pictures/slide-1.jpg)"
+          alt="Mountains"
+        ></div>
+        <div
+          id="image-1"
+          class="slide"
+          style="background-image: url(Resources/Pictures/slide-2.jpg)"
+          alt="Mountains"
+        ></div>
+        <div
+          id="image-2"
+          class="slide"
+          style="background-image: url(Resources/Pictures/slide-3.jpg)"
+          alt="Mountains"
+        ></div>
+      </div>
     </div>
 
-            <!--  Second Sales Items Section  -->
+    <!--  Sales Items  -->
     <div class="sales-items-outer-box">
-        <div class="sales-items-container">
+      <div class="sales-items-container">
+        <a
+          class="sales-individual-box sales-box1"
+          href="./Resources/HTML-Folder/ItemListPg.html"
+        >
+          <div class="sales-first-box-text">
+            <h2>Jackets</h2>
+            <br />
+            <span>View All</span>
+          </div>
+        </a>
 
-            <a class="sales-individual-box sales-box1" href='./Resources/HTML-Folder/ItemListPg.html'>
-                <div class="overlay"></div>
-                <div class="sales-first-box-text sales-first-box-text-ii">
-                    <h2>Snowboard Bindings</h2> 
-                    <br>  
-                    <span>View All</span>        
-                </div>
-            </a>
-
-            <div  class="sales-individual-box sales-box2">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img">
-                        <img src="./resources/pictures/bind1.png" alt="snowboard bindings"/>
-                    </div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Cartel</div>
-                        <span class="sales-item-price">$179.96</span>
-                    </div>
-                </div>
+        <div class="sales-individual-box sales-box2">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket1.png" alt="jacket" />
             </div>
-
-
-            <div  class="sales-individual-box sales-box3">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind2.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Cartel</div>
-                        <span class="sales-item-price">$259.95</span>
-                    </div>
-                </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Haze Varsity</div>
+              <span class="sales-item-price">$132.96</span>
             </div>
-
-            <div class="sales-individual-box sales-box4">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind3.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Cartel</div>
-                        <span class="sales-item-price">SOLD OUT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  class="sales-individual-box sales-box5 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind4.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Cartel</div>
-                        <span class="sales-item-price">$259.95</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div  class="sales-individual-box sales-box6 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind5.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Cartel EST</div>
-                        <span class="sales-item-price">$259.95</span>
-                    </div>
-                </div>
-            </div>   
-
-            <div  class="sales-individual-box sales-box7 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind6.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Cartel EST</div>
-                        <span class="sales-item-price">$259.95</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  class="sales-individual-box sales-box8 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind7.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Citizen</div>
-                        <span class="sales-item-price">$97.46</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  class="sales-individual-box sales-box9 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind8.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Citizen</div>
-                        <span class="sales-item-price">$139.95</span>
-                    </div>
-                </div>
-            </div>
-    
-            <div  class="sales-individual-box sales-box10 desktop">
-                <div class="sales-inner-container">
-                    <a class="hover-image" href="./Resources/HTML-Folder/item-info-pg.html">View</a>
-                    <div class="sales-items-img"><img src="./resources/pictures/bind9.png" alt="snowboard bindings"></div> 
-                    <div class="sales-items-text">
-                        <div class="sales-item-name">Custom</div>
-                        <span class="sales-item-price">$127.46</span>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div class="sales-individual-box sales-box3">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket2.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Greed Jacket</div>
+              <span class="sales-item-price">From $161</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box4">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket3.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Restricted Pole Cat</div>
+              <span class="sales-item-price">$132.96</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box5 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket5.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">LA</div>
+              <span class="sales-item-price">From $139.96</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box6 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket6.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Campus</div>
+              <span class="sales-item-price">From $132.96</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box7 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket7.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Flint</div>
+              <span class="sales-item-price">From $139.96</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box8 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket8.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Frontier</div>
+              <span class="sales-item-price">From $167.96</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box9 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket9.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Juana</div>
+              <span class="sales-item-price">From $959.40</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box10 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img src="./Resources/Pictures/jacket10.png" alt="jacket" />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Gala</div>
+              <span class="sales-item-price">From $1399.30</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-<!--  Footer Section  -->
+
+    <!--  Second Sales Items Section  -->
+    <div class="sales-items-outer-box">
+      <div class="sales-items-container">
+        <a
+          class="sales-individual-box sales-box1"
+          href="./Resources/HTML-Folder/ItemListPg.html"
+        >
+          <div class="overlay"></div>
+          <div class="sales-first-box-text sales-first-box-text-ii">
+            <h2>Snowboard Bindings</h2>
+            <br />
+            <span>View All</span>
+          </div>
+        </a>
+
+        <div class="sales-individual-box sales-box2">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind1.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Cartel</div>
+              <span class="sales-item-price">$179.96</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box3">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind2.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Cartel</div>
+              <span class="sales-item-price">$259.95</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box4">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind3.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Cartel</div>
+              <span class="sales-item-price">SOLD OUT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box5 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind4.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Cartel</div>
+              <span class="sales-item-price">$259.95</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box6 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind5.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Cartel EST</div>
+              <span class="sales-item-price">$259.95</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box7 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind6.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Cartel EST</div>
+              <span class="sales-item-price">$259.95</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box8 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind7.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Citizen</div>
+              <span class="sales-item-price">$97.46</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box9 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind8.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Citizen</div>
+              <span class="sales-item-price">$139.95</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sales-individual-box sales-box10 desktop">
+          <div class="sales-inner-container">
+            <a
+              class="hover-image"
+              href="./Resources/HTML-Folder/item-info-pg.html"
+              >View</a
+            >
+            <div class="sales-items-img">
+              <img
+                src="./Resources/Pictures/bind9.png"
+                alt="snowboard bindings"
+              />
+            </div>
+            <div class="sales-items-text">
+              <div class="sales-item-name">Custom</div>
+              <span class="sales-item-price">$127.46</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Footer Section  -->
     <footer>
-        <div class="footer-container">
-            <div class="contact footer-individual-box">
-                <h3 class="footer-title">Contact</h3>
-                <div class="footer-box">2150 Virginia Street, New York, NY 60154</div>
-                <div class="footer-box footer-phone">777-777-7777</div>
-                <div class="footer-box">name@company.com</div>
-            </div>
-
-            <div class="support footer-individual-box">
-                <h3 class="footer-title">Support</h3>
-                <div class="footer-box support-terms">Terms and Conditions</div>
-                <div class="footer-box support-privacy">Privacy Policy</div>
-                <div class="footer-box support-return">Return Policy</div>
-            </div>
-
-            <div class="about footer-individual-box">
-                <div class="footer-title">About</div>
-                <div class="footer-box about-news">News</div>
-                <div class="footer-box about-contact">Contact</div>
-                <div class="footer-box about-theme">Theme Features</div>
-            </div>
-
-            <div class="in-the-know footer-individual-box">
-                <div class="footer-title">Be in the know</div>
-                <div class="footer-box footer-promotions">Promotions, new products, and sales.  Directly to your inbox.</div>
-                <form class="pure-form">
-                    <input class="email-form" type="email" placeholder="Your email">
-                    <button type="submit" class="pure-button pure-button-primary">></button>
-                </form>
-                
-            </div>
-
-            <div class="credit-cards"></div>
+      <div class="footer-container">
+        <div class="contact footer-individual-box">
+          <h3 class="footer-title">Contact</h3>
+          <div class="footer-box">2150 Virginia Street, New York, NY 60154</div>
+          <div class="footer-box footer-phone">777-777-7777</div>
+          <div class="footer-box">name@company.com</div>
         </div>
+
+        <div class="support footer-individual-box">
+          <h3 class="footer-title">Support</h3>
+          <div class="footer-box support-terms">Terms and Conditions</div>
+          <div class="footer-box support-privacy">Privacy Policy</div>
+          <div class="footer-box support-return">Return Policy</div>
+        </div>
+
+        <div class="about footer-individual-box">
+          <div class="footer-title">About</div>
+          <div class="footer-box about-news">News</div>
+          <div class="footer-box about-contact">Contact</div>
+          <div class="footer-box about-theme">Theme Features</div>
+        </div>
+
+        <div class="in-the-know footer-individual-box">
+          <div class="footer-title">Be in the know</div>
+          <div class="footer-box footer-promotions">
+            Promotions, new products, and sales. Directly to your inbox.
+          </div>
+          <form class="pure-form">
+            <input class="email-form" type="email" placeholder="Your email" />
+            <button type="submit" class="pure-button pure-button-primary">
+              >
+            </button>
+          </form>
+        </div>
+
+        <div class="credit-cards"></div>
+      </div>
     </footer>
-</body>
-<script type="text/javascript" src="./main.js"></script>
+  </body>
+  <script type="text/javascript" src="./main.js"></script>
 </html>
